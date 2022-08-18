@@ -1,0 +1,68 @@
+/* Google Fonts - Roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+body ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* style scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  background: #0f142a;
+}
+
+
+
+
+::-webkit-scrollbar-thumb {
+  background: #F5F5F5;
+  border-radius: 7px;
+}
+
+
+
+
+.sticking {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu-animation {
+  transition: all 0.75s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+  animation: slide-in-down 0.75s ease-in-out;
+}
+
+@keyframes slide-in-down {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* // Custom CSS */
+.bg-linkedin {
+  background-color: #0072b5;
+}
+
+.bg-linkedin:hover {
+  background-color: darken(#0072b5, 5%);
+}
+
+.bg-twitter {
+  background-color: #1da1f2;
+}
+
+.bg-twitter:hover {
+  background-color: darken(#1da1f2, 5%);
+}
