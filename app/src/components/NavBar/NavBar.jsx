@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "./LightSpeedAI-Labs-v5-dark-01.png";
+import logo from "./logo.jpeg";
 import { Transition } from "@headlessui/react";
 
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -11,6 +11,7 @@ function NavBar() {
 
   const handleClick = () => {
     setNav(!nav);
+    // open navbar below
   };
 
   const handleClose = () => {
@@ -18,71 +19,84 @@ function NavBar() {
   };
 
   return (
-    <div className=" sticking ">
-      <nav className="flex justify-between flex-wrap bg-slate-900 p-2  z-50  ">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <img className="w-auto h-12" src={logo} alt="lightspeedai" />
-        </div>
-        <div className="block lg:hidden">
-          <button
-            className="flex border  items-center px-3 py-2 nav-toggler transition duration-1000 ease-in-out rounded-lg text-white hover:text-white hover:bg-slate-900 focus:outline-none focus:shadow-outline navbar-menu-toggle"
-            // add toggle to navbar for mobile
-            onClick={handleClick}
-          >
-            {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
-
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </button>
-        </div>
-
-        <div
-          className={`${
-            nav ? "block" : "hidden"
-          } w-full flex-grow lg:flex lg:items-center lg:w-auto nav-list transition-all duration-500 transform translate-x-0 mobile-menu-animation`}
-        >
-          {/* small screens */}
-          <div className="text-sm lg:flex-grow" id="n">
+    <div className="">
+      <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          {/* Nav Content */}
+          <div className="p-4 flex flex-row items-center justify-between">
             <NavLink
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4 focus-shadow-outline transition duration-500 ease-in-out"
               to="/"
-              onClick={handleClose}
+              className=" uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
             >
-              Home
+              <img
+                className="w-auto h-12  "
+                src={logo}
+                alt="LightSpeedPhotonics"
+              />
             </NavLink>
-            <NavLink
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
-              to="/team"
-              onClick={handleClose}
+            <button
+              className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+              onClick={handleClick}
             >
-              Team
-            </NavLink>
-            <NavLink
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
-              to="/news"
-              onClick={handleClose}
-            >
-              News
-            </NavLink>
-            <NavLink
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
-              to="/scheduleCall"
-              onClick={handleClose}
-            >
-              Schedule Call
-            </NavLink>
+              <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
+                {!nav ? <MenuIcon /> : <XIcon />}
+              </svg>
+            </button>
           </div>
-          <div>
+
+          {/* NAV BAR */}
+          <nav
+            className={
+              "flex-col  md:flex md:justify-end md:flex-row w-full  lg:flex lg:items-center " +
+              (nav ? "flex" : "hidden")
+            }
+          >
+            {/* small screens */}
             <NavLink
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-              to="/contact"
+              to="/about"
               onClick={handleClose}
+              className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900  mx-2 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             >
-              Contact
+              Blog
             </NavLink>
-          </div>
+            <NavLink
+              to="/about"
+              onClick={handleClose}
+              className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900  mx-2 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              Products
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={handleClose}
+              className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900  mx-2 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              Company
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={handleClose}
+              className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900  mx-2 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              Insights
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={handleClose}
+              className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900  mx-2 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              Careers
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={handleClose}
+              className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900  mx-2 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              Contact Us
+            </NavLink>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }
