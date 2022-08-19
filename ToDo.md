@@ -88,6 +88,13 @@ Add the table from Brochure -> Features
 
 # Publications Page:
 
+    Technical Publications:
+        - Journals
+        - Conferences
+    White Papers
+    Articles
+    Patents
+
 # Careers
 
 Explore the possibilities:
@@ -95,3 +102,18 @@ Explore the possibilities:
 > Team Names & Available roles
 
 # About Us
+
+Add a Map for location
+
+> Write to Us -> Contact Us
+> Name, Email , Message -> Send
+
+---
+
+# MENU Bar
+
+| Logo |      Products      |         Company          |   Insights   | Careers | Contact Us |
+| :--: | :----------------: | :----------------------: | :----------: | :-----: | :--------: |
+|      |    LightKonnect    |           Team           | Publications |         |            |
+|      |      LightSiP      | Collaboration & partners |     Blog     |         |            |
+|      | LightKonnect Fiber |        Investors         |     News     |         |            |
