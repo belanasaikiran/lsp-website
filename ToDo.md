@@ -1,23 +1,16 @@
-
 # Website Contents
-
 
 ## HOME:
 
 ### What we do ?
 
- > At LightSpeed Photonics,
+> At LightSpeed Photonics,
 
      we combine optical interconnects with Processors to build a modular “compute+interconnect” heterogeneous System-in-Package (SiP), “LightSiP™” resulting in a scalable server reducing data latency, footprint, power consumption while increasing the data bandwidth and performance per watt.  It incorporates proprietary high data rate free-space optical interconnect, “LightKonnect™” for protocol agnostic chip-to-chip communication.
 
     Reconfigurable electronics provides the computing power and optics provides the interconnect and together, the LightSiP provides upto 20x performance at half the power.
 
-
-
-
 ### WHO MAY BENIFIT:
-
-
 
     TELECOM & 5G
 
@@ -31,7 +24,6 @@
 
     DATA CENTERs & IAAS
 
-
 ### OUR INVESTORS:
 
     EF
@@ -41,9 +33,8 @@
     LUMINATE
 
     IME A*
-    
-    growX
 
+    growX
 
 ### partner with us:
 
@@ -53,13 +44,54 @@ Some content: - > and -> Get in TOuch
 
 To all pages.
 
->   @2022 by LightSpeed Photonics Pvt.Ltd.
-
+> @2022 by LightSpeed Photonics Pvt.Ltd.
 
 ---
 
-Products:
+# Products:
 
-1. LightKonnectTM
-2. LightSiP
-3. LightCompute
+1.  LightKonnect:
+
+        16 Gbps/Channel, Twelve Channel, Protocol-agnostic Parallel Free Space Optics Transmitter and Receiver Modules
+
+Add an Image
+
+### Features:
+
+- Free-space optical interconnect
+- Protocol agnostic chip-to-chip communication
+- High data rate
+- Low latency
+- Low footprint
+- Low power consumption
+- Links up to distances of 150 mm between modules
+
+Add the table from Brochure -> Features
+
+### Applications:
+
+- 200/400/800 GbE interconnects with FDR and EDR channels.
+- Data Aggregation, Proprietary Protocol and Density Applications.
+- High Performance and High Productivity computer interconnects.
+- Switch Fabric interconnects.
+
+
+    > Download Brochure option
+
+    Add Development Kit option
+
+2. LightKonnect Fiber - Coming Soon
+
+3. LightSiP - Coming Soon
+
+---
+
+# Publications Page:
+
+# Careers
+
+Explore the possibilities:
+
+> Team Names & Available roles
+
+# About Us
