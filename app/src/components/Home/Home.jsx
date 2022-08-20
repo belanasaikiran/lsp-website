@@ -1,67 +1,50 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
 import BG from "../../assets/images/bg.jpg";
+import OLD_BG from "../../assets/images/old_website.jpg";
+import SIP from "../../assets/images/2legoSIP.2.JPG";
 
-import Laser_1 from "../../assets/images/laser_1.jpg";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { Spring, useSpring, animated } from "react-spring";
-import Footer from "../Footer/Footer";
+
 
 function Home() {
   return (
-    <div className="home ">
-      {/* <Parallax pages={3} scrolling  > */}
-      <ParallaxLayer
-        offset={0}
-        speed={2}
-        style={{
-          backgroundImage: `url(${BG})`,
-          backgroundSize: "cover",
-        }}
+    <div>
+      <div className="grid md:grid-flow-col gap-4 md:px-60 px-2 py-12 bg-cover bg-gray-50  "
+      
+        // add background image
+      
       >
-        <ParallaxLayer
-          offset={0}
-          speed={0.5}
-          className="mx-auto w-full h-full flex justify-center pt-40   "
-        >
-          {/* <Spring config={{ duration: 2000 }} > */}
-          <div className="flex flex-col bg-blend-multiply text-center text-slate-100 px-20   ">
-            <h1 className=" md:text-6xl text-3xl font-Roboto-Bold font-bold ">
-              Bringing{" "}
-              <span className="bg-gradient-to-r bg-clip-text  text-transparent from-red-500 via-green-500 to-violet-500  subpixel-antialiased underline hover:decoration-slate-100  ">
-                Light
-              </span>{" "}
-              to Compute World!
-            </h1>
-            <br />
-            <br />
+        <div className="md:flex flex-col text-black items-center pt-1 md:pt-8">
+          <h1 className="md:text-5xl text-3xl  text-semibold font-bold md:text-left md:leading-[4rem] ">
+            Bringing <span className="text-amber-700">Light</span> to the Compute World !
+          </h1>
+          <p className="md:text-2xl pt-8">
+            Building Lego-Like Optoelectronic Processors and Interconnects for
+            DataCenters and near-Edge Compute
+          </p>
+        </div>
+        <div>
+          <img src={SIP} alt="laser" className="shadow-2xl" />
+        </div>
+      </div>
 
-            <p className="md:text-3xl text-2xl font-Roboto-Bold">
-              Building Lego-Like Optoelectronic Processors and Interconnects for
-              DataCenters and near-Edge Compute
-            </p>
-          </div>
-          <div class="shadow-md ...">HI</div>
-        </ParallaxLayer>
-      </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={2} style={{ backgroundColor: "#000" }} />
 
-      <ParallaxLayer
-        offset={1}
-        speed={0.5}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "white",
-        }}
-      >
-        <p>Scroll up</p>
-      </ParallaxLayer>
-      {/* <ParallaxLayer offset={2} speed={2}>
-          <Footer />
-        </ParallaxLayer> */}
-      {/* </Parallax> */}
+      {/* Section -2 */}
+      <div>
+      <div className="md:px-60 px-2 py-12  bg-red-500 ">
+      <div className=" text-white  items-center pt-1 md:pt-8">
+        <h1 className="md:text-5xl text-3xl  text-semibold font-bold text-center md:leading-[4rem] ">
+        At LightSpeed Photonics,
+        </h1>
+        <p className="md:text-2xl pt-16 text-justify px-5 ">
+        We combine optical interconnects with Processors to build a modular <span className="text-rose-800 font-medium" >compute+interconnect</span> heterogeneous System-in-Package (SiP), <span className="text-red-500 font-medium" >LightSiP™</span> resulting in a scalable server reducing data latency, footprint, power consumption while increasing the data bandwidth and performance per watt.  It incorporates proprietary high data rate free-space optical interconnect, <span className="text-red-500 font-medium" >LightKonnect™</span> for protocol agnostic chip-to-chip communication.
+        </p>
+        <p className="md:text-2xl pt-8 text-justify px-5 ">
+        Reconfigurable electronics provides the computing power and optics provides the interconnect and together, the LightSiP provides upto 20x performance at half the power.</p>
+      </div>
+      <div>
+      </div>
+    </div>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@
 
     Reconfigurable electronics provides the computing power and optics provides the interconnect and together, the LightSiP provides upto 20x performance at half the power.
 
-### WHO MAY BENIFIT:
+### WHO MAY BENEFIT FROM US:
 
     TELECOM & 5G
 
