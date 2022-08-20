@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
-import LightSpeedAI_Logo from "../../assets/images/LightSpeedAI-Labs-v5-dark-01.png";
 import BG from "../../assets/images/bg.jpg";
 
 import Laser_1 from "../../assets/images/laser_1.jpg";
@@ -8,9 +7,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Spring, useSpring, animated } from "react-spring";
 import Footer from "../Footer/Footer";
 
-
 function Home() {
-  
   return (
     <div className="home ">
       {/* <Parallax pages={3} scrolling  > */}
