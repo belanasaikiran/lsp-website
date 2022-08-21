@@ -33,16 +33,8 @@ function NavBar() {
     transform: nav ? "translateX(0)" : "translateX(-100%)",
   };
 
-  const [subLinks, setSubLinks] = React.useState(false);
-  const handleSubClick = () => {
-    setSubLinks(!subLinks);
-  };
-  const handleSubClose = () => {
-    setSubLinks(false);
-  };
-
   return (
-    <div className="sticky top-0 z-400">
+    <div className="sticky top-0 z-[1]">
       <div className="w-full  text-gray-500 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div className="flex flex-col max-w-screen-xl  mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           {/* Nav Content */}
@@ -61,7 +53,11 @@ function NavBar() {
               className="md:hidden rounded-lg focus:outline-none focus:shadow-outline transition-all duration-500 delay-300 ease-in-out"
               onClick={handleClick}
             >
-              <svg fill="currentColor" viewBox="0 0 20 20" className="w-8 h-8 transition-all duration-500 delay-500 ">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                className="w-8 h-8 transition-all duration-500 delay-500 "
+              >
                 {!nav ? <MenuIcon /> : <XIcon />}
               </svg>
             </button>
@@ -84,14 +80,15 @@ function NavBar() {
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     LightKonnect
                   </a>
                 </li>
                 <li class="">
                   <a
-                    href="#"
+                    href="#_"
+                    target="_blank"
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
                   >
                     LightSiP
@@ -99,14 +96,14 @@ function NavBar() {
                 </li>
                 <li class="">
                   <a
-                    href="#"
+                    href="#_"
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
                   >
                     LightKonnect Fiber
                   </a>
                 </li>
               </ul>
-            </div> 
+            </div>
 
             {/* Company */}
             <div class="group relative inline-block px-2">
@@ -114,11 +111,11 @@ function NavBar() {
                 Company
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
-              <ul class="hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-56 z-30 md:absolute">
+              <ul class="hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-64 z-30 md:absolute">
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     Team
                   </a>
@@ -126,7 +123,7 @@ function NavBar() {
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     Collaborations & Partners
                   </a>
@@ -134,7 +131,7 @@ function NavBar() {
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     Investors
                   </a>
@@ -151,7 +148,7 @@ function NavBar() {
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     Publications
                   </a>
@@ -159,7 +156,7 @@ function NavBar() {
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     Blog
                   </a>
@@ -167,7 +164,7 @@ function NavBar() {
                 <li class="">
                   <a
                     class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#"
+                    href="#_"
                   >
                     News
                   </a>
