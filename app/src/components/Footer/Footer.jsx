@@ -4,9 +4,9 @@ import { FaLinkedin, FaTwitter, FaLocationArrow } from "react-icons/fa";
 function Footer() {
   return (
     <div className="footer-1 bg-gray-800 pt-6 md:pt-12  bottom-0 right-0 left-0   ">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto md:px-16">
         <div className="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12">
-          <div className="footer-info lg:w-1/4 md:px-4">
+          <div className="footer-info lg:w-1/3 md:px-4">
             <h4 className="text-white text-2xl mb-4">LightSpeed Photonics</h4>
             <p className="text-gray-400">
               Building Lego-Like OptoElectronic Processors & Interconnects for
@@ -32,20 +32,20 @@ function Footer() {
                 <div className="flex flex-row ">
                   <div className="basis-1/2">
                     <a
-                      href="#"
+                      href="#_"
                       className="text-gray-400 py-1 block hover:underline"
                     >
                       Products
                     </a>
                     <a
-                      href="#"
+                      href="#_"
                       className="text-gray-400 py-1 block hover:underline"
                     >
                       Company
                     </a>
 
                     <a
-                      href="#"
+                      href="#_"
                       className="text-gray-400 py-1 block hover:underline"
                     >
                       Team
@@ -53,19 +53,19 @@ function Footer() {
                   </div>
                   <div className="basis-1/2">
                     <a
-                      href="#"
+                      href="#_"
                       className="text-gray-400 py-1 block hover:underline"
                     >
                       News
                     </a>
                     <a
-                      href="#"
+                      href="#_"
                       className="text-gray-400 py-1 block hover:underline"
                     >
                       Careers
                     </a>
                     <a
-                      href="#"
+                      href="#_"
                       className="text-gray-400 py-1 block hover:underline"
                     >
                       Contact Us
@@ -84,9 +84,12 @@ function Footer() {
                   Communication
                 </h6>
                 <div className="text-gray-400 inline-flex">
-                  <span><FaLocationArrow className="mr-2 mt-1" /></span> LightSpeed Photonics Private Limited ©
-                  2021 Registered Address: 111 Somerset Road, #08-10A, 111
-                  Somerset, 238164 - Singapore
+                  <span>
+                    <FaLocationArrow className="mr-2 mt-1" />
+                  </span>{" "}
+                  LightSpeed Photonics Private Limited © 2021 Registered
+                  Address: 111 Somerset Road, #08-10A, 111 Somerset, 238164 -
+                  Singapore
                 </div>
               </div>
             </div>
@@ -94,8 +97,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-solid border-gray-900 mt-4 py-4">
-        <div className="container px-4 mx-auto">
+      <div className="border-t border-solid border-gray-900 mt-4 py-4 ">
+        <div className="container px-4 mx-auto md:px-16">
           <div className="md:flex md:-mx-4 md:items-center">
             <div className="md:flex-1 md:px-4 text-center md:text-left">
               <p className="text-white">
