@@ -14,10 +14,23 @@ function Footer() {
               processing.
             </p>
             <div className="mt-4">
-              <button className="bg-linkedin py-2 px-4 text-white rounded mt-2 transition-colors duration-300">
+              <button
+                className="bg-linkedin py-2 px-4 text-white rounded mt-2 transition-colors duration-300"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/company/lightspeedai/",
+                    "_blank"
+                  )
+                }
+              >
                 <FaLinkedin />
               </button>
-              <button className="bg-twitter py-2 px-4 text-white rounded ml-2 mt-2 transition-colors duration-300">
+              <button
+                className="bg-twitter py-2 px-4 text-white rounded ml-2 mt-2 transition-colors duration-300"
+                onClick={() =>
+                  window.open("https://twitter.com/LSPhotonics", "_blank")
+                }
+              >
                 <FaTwitter />
               </button>
             </div>
@@ -31,43 +44,25 @@ function Footer() {
                 </h6>
                 <div className="flex flex-row ">
                   <div className="basis-1/2">
-                    <a
-                      href="#_"
-                      className="text-gray-400 py-1 block hover:underline"
-                    >
+                    <a href="#_" className="text-gray-400 py-1 block  ">
                       Products
                     </a>
-                    <a
-                      href="#_"
-                      className="text-gray-400 py-1 block hover:underline"
-                    >
+                    <a href="#_" className="text-gray-400 py-1 block  ">
                       Company
                     </a>
 
-                    <a
-                      href="#_"
-                      className="text-gray-400 py-1 block hover:underline"
-                    >
+                    <a href="#_" className="text-gray-400 py-1 block  ">
                       Team
                     </a>
                   </div>
                   <div className="basis-1/2">
-                    <a
-                      href="#_"
-                      className="text-gray-400 py-1 block hover:underline"
-                    >
+                    <a href="#_" className="text-gray-400 py-1 block  ">
                       News
                     </a>
-                    <a
-                      href="#_"
-                      className="text-gray-400 py-1 block hover:underline"
-                    >
+                    <a href="#_" className="text-gray-400 py-1 block  ">
                       Careers
                     </a>
-                    <a
-                      href="#_"
-                      className="text-gray-400 py-1 block hover:underline"
-                    >
+                    <a href="#_" className="text-gray-400 py-1 block ">
                       Contact Us
                     </a>
                   </div>
@@ -85,7 +80,13 @@ function Footer() {
                 </h6>
                 <div className="text-gray-400 inline-flex">
                   <span>
-                    <FaLocationArrow className="mr-2 mt-1" />
+                    <a
+                      target="_blank"
+                      href="https://goo.gl/maps/TTo32KsHuFgB9yWq7"
+                      rel="noreferrer"
+                    >
+                      <FaLocationArrow className="mr-2 mt-1" />
+                    </a>
                   </span>{" "}
                   LightSpeed Photonics Private Limited © 2021 Registered
                   Address: 111 Somerset Road, #08-10A, 111 Somerset, 238164 -
@@ -97,7 +98,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-solid border-gray-900 mt-4 py-4 ">
+      <div className="border-t border-solid border-gray-900 mt-4 py-4 text-white ">
         <div className="container px-4 mx-auto md:px-16">
           <div className="md:flex md:-mx-4 md:items-center">
             <div className="md:flex-1 md:px-4 text-center md:text-left">
@@ -107,15 +108,18 @@ function Footer() {
             </div>
             <div className="md:flex-1 md:px-4 text-center md:text-right">
               <a
-                href="#"
-                className="py-2 px-4 text-white inline-block hover:underline"
+                href="#_"
+                className="py-2 px-4 text-white inline-block  "
                 target="_blank"
+                rel="noreferrer"
               >
                 Terms of Service
               </a>
               <a
-                href="#"
-                className="py-2 px-4 text-white inline-block hover:underline"
+                href="#_"
+                className="py-2 px-4 text-white inline-block  "
+                rel="noreferrer"
+                target="_blank"
               >
                 Privacy Policy
               </a>
