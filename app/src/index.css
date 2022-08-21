@@ -15,16 +15,10 @@ body ::-webkit-scrollbar {
   background: #0f142a;
 }
 
-
-
-
 ::-webkit-scrollbar-thumb {
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 7px;
 }
-
-
-
 
 .sticking {
   position: sticky;
@@ -65,4 +59,10 @@ body ::-webkit-scrollbar {
 
 .bg-twitter:hover {
   background-color: darken(#1da1f2, 5%);
+}
+
+@layer base {
+  a:hover {
+    @apply text-red-800;
+  }
 }
