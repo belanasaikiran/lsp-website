@@ -18,14 +18,14 @@ function Home() {
   return (
     <div>
       <div
-        className="grid md:grid-flow-col md:gap-4 md:px-60 px-2 py-12 bg-cover bg-gray-100  "
+        className="grid md:grid-flow-col md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-144   "
 
         // add background image
       >
         <div className="md:flex flex-col text-black items-center pt-1 md:pt-8">
           <h1 className="md:text-5xl text-3xl  text-semibold font-bold md:text-left md:leading-[4rem]  ">
             Bringing{" "}
-            <span className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-800 hover:to-red-600  text-white rounded-lg px-2 hover:scale-110   ">
+            <span className="bg-gradient-to-r text-red-800   hover:scale-110   ">
               Light
             </span>{" "}
             to the Compute World !
@@ -48,30 +48,31 @@ function Home() {
 
       {/* Section -2 */}
       <div>
-        <div className="md:px-60 px-2 py-12  bg-gradient-to-r from-red-300 to-red-500 ">
-          <div className=" text-black  items-center pt-1 md:pt-8">
-            <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem] ">
+        <div className="md:px-60 px-2 py-12  bg-red-800 ">
+          <div className=" text-gray-100  items-center text-center pt-1 md:pt-8">
+            <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem]  ">
               At LightSpeed Photonics,
             </h1>
-            <p className="md:text-2xl pt-16 text-justify px-5 ">
+            <p className="md:text-2xl pt-16  px-5 ">
               We combine optical interconnects with Processors to build a
               modular{" "}
-              <span className="text-white font-medium">
+              <span className="text-white font-black">
                 compute+interconnect
               </span>{" "}
               heterogeneous System-in-Package (SiP),{" "}
-              <span className="text-white font-medium">LightSiP™</span>{" "}
-              resulting in a scalable server reducing data latency, footprint,
-              power consumption while increasing the data bandwidth and
-              performance per watt. It incorporates proprietary high data rate
-              free-space optical interconnect,{" "}
-              <span className="text-white font-medium">LightKonnect™</span> for
-              protocol agnostic chip-to-chip communication.
+              <span className="text-white font-black">LightSiP™</span> resulting
+              in a scalable server reducing data latency, footprint, power
+              consumption while increasing the data bandwidth and performance
+              per watt. It incorporates proprietary high data rate free-space
+              optical interconnect,{" "}
+              <span className="text-white font-black">LightKonnect™</span> for
+              protocol agnostic chip-to-chip communication. drop-shadow-xl
             </p>
-            <p className="md:text-2xl pt-8 text-justify px-5 ">
+            <p className="md:text-2xl pt-8  px-5 ">
               Reconfigurable electronics provides the computing power and optics
               provides the interconnect and together, the LightSiP provides upto
-              20x performance at half the power.
+              <span className="font-black"> 20x</span> performance at half the
+              power.
             </p>
           </div>
         </div>
@@ -133,7 +134,7 @@ function Home() {
               <img
                 src={GrowX}
                 alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4"
+                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
                 href="http://growxventures.com/"
@@ -148,7 +149,7 @@ function Home() {
               <img
                 src={ef_logo}
                 alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4"
+                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
                 href="https://www.joinef.com/"
@@ -163,7 +164,7 @@ function Home() {
               <img
                 src={YourNest}
                 alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4"
+                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
                 href="https://yournest.in/_"
@@ -178,7 +179,7 @@ function Home() {
               <img
                 src={Luminate}
                 alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4"
+                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
                 href="https://luminategroup.com/"
@@ -193,7 +194,7 @@ function Home() {
               <img
                 src={IME}
                 alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4"
+                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
                 href="https://www.a-star.edu.sg/ime"
