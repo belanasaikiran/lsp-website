@@ -35,22 +35,21 @@ function LightKonnect() {
               modules for short-range parallel multi-lane data communication and
               interconnect applications in a small LGA Surface Mount Package.
             </p>
+            <button className="bg-red-900 text-white p-3 rounded-xl font-semibold drop-shadow-sm hover:drop-shadow-xl hover:bg-red-700 hover:scale-x-105  transition-all duration-500  ">
+              Download Brochure
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="py-10">
+      <div className="py-10 md:px-8 px-8">
         <div className="text-3xl text-red-900 font-semibold ">Features:</div>
         <div>
-          <ul className="list-disc pl-10 pt-6 text-lg" >
+          <ul className="list-disc pl-10 pt-6 text-lg">
             <li>16Gbps x 12 channel Transmit and Receive lanes</li>
-            <li>
-            &#60; 50mW per channel Power consumption ( &#60; 3pJ/bit ) 
-            </li>
+            <li>&#60; 50mW per channel Power consumption ( &#60; 3pJ/bit )</li>
             <li>I2C Programmable Interface Tx and Rx</li>
-            <li>Reflow Solderable
-              Surface Mount LGA Package
-            </li>
+            <li>Reflow Solderable Surface Mount LGA Package</li>
           </ul>
         </div>
       </div>
