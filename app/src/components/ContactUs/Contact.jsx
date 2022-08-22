@@ -13,7 +13,8 @@ function Contact() {
       title: "Phone",
       description: (
         <div>
-          For immediate assistance, please call <br /> +65 87415785
+          For immediate assistance, please call <br />{" "}
+          <span className="font-semibold">+65 8741 5785</span>
         </div>
       ),
     },
@@ -75,7 +76,7 @@ function Contact() {
         </span>
         Us
       </h1>
-      <div className="grid md:grid-cols-2 justify-items-center py-6 ">
+      <div className="grid md:grid-cols-2 justify-items-center py-8 ">
         <div className="md:px-24">
           <motion.div
             className="box"
@@ -84,7 +85,7 @@ function Contact() {
           >
             <iframe
               title="map"
-              className="rounded-2xl drop-shadow-lg md:h-[600px] md:w-[640px] w-max h-[300px] "
+              className="rounded-2xl drop-shadow-lg md:h-[600px] md:w-[700px] w-max h-[300px] "
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90255.37178681736!2d103.81921502984734!3d1.3187208924479028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1990ce497297%3A0x830557758f430bc3!2sSomerset!5e0!3m2!1sen!2sin!4v1661152336944!5m2!1sen!2sin"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
