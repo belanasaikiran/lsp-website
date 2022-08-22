@@ -9,6 +9,10 @@ import News from "./components/News/News";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import BounceLoader from "react-spinners/BounceLoader";
+import Contact from "./components/ContactUs/Contact";
+import LightKonnect from "./components/Products/LightKonnect";
+import LightKonnectFiber from "./components/Products/LightKonnectFiber";
+import LightSiP from "./components/Products/LightSiP";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -31,10 +35,14 @@ function App() {
        
               <NavBar />
 
-            <Routes>
+            <Routes  >
               <Route path="/" element={<Home />} />
               <Route path="/" element={<Team />} />
               <Route path="/news" element={<News />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/products/lightkonnect" element={<LightKonnect />} />
+              <Route path="/products/lightkonnectFiber" element={<LightKonnectFiber />} />
+              <Route path="/products/lightsip" element={<LightSiP />} />
             </Routes>
               <Footer />
         </Router>

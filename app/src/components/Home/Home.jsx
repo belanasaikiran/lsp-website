@@ -1,6 +1,4 @@
 import React from "react";
-import BG from "../../assets/images/bg.jpg";
-import OLD_BG from "../../assets/images/old_website.jpg";
 import SIP from "../../assets/images/2legoSIP2.png";
 import { motion } from "framer-motion";
 import { VscRadioTower } from "react-icons/vsc";
@@ -18,7 +16,7 @@ function Home() {
   return (
     <div>
       <div
-        className="grid md:grid-flow-col md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-144   "
+        className="grid md:grid-flow-col md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164   "
 
         // add background image
       >
@@ -48,7 +46,7 @@ function Home() {
 
       {/* Section -2 */}
       <div>
-        <div className="md:px-60 px-2 py-12  bg-red-800 ">
+        <div className="md:px-60 px-2 py-12  bg-red-900 ">
           <div className=" text-gray-100  items-center text-center pt-1 md:pt-8">
             <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem]  ">
               At LightSpeed Photonics,
@@ -56,22 +54,22 @@ function Home() {
             <p className="md:text-2xl pt-16  px-5 ">
               We combine optical interconnects with Processors to build a
               modular{" "}
-              <span className="text-white font-black">
+              <span className="text-white font-black md:text-3xl">
                 compute+interconnect
               </span>{" "}
               heterogeneous System-in-Package (SiP),{" "}
-              <span className="text-white font-black">LightSiP™</span> resulting
+              <span className="text-white font-black md:text-3xl">LightSiP™</span> resulting
               in a scalable server reducing data latency, footprint, power
               consumption while increasing the data bandwidth and performance
               per watt. It incorporates proprietary high data rate free-space
               optical interconnect,{" "}
-              <span className="text-white font-black">LightKonnect™</span> for
+              <span className="text-white font-black md:text-3xl">LightKonnect™</span> for
               protocol agnostic chip-to-chip communication. drop-shadow-xl
             </p>
             <p className="md:text-2xl pt-8  px-5 ">
               Reconfigurable electronics provides the computing power and optics
               provides the interconnect and together, the LightSiP provides upto
-              <span className="font-black"> 20x</span> performance at half the
+              <span className="font-black md:text-3xl"> 20x</span> performance at half the
               power.
             </p>
           </div>

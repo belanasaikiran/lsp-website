@@ -3,8 +3,8 @@ import { FaLinkedin, FaTwitter, FaLocationArrow } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer-1 bg-gray-800 pt-6 md:pt-12  bottom-0 right-0 left-0   ">
-      <div className="container px-4 mx-auto md:px-16">
+    <div className="bg-gray-800 pt-6 md:pt-12  bottom-0 right-0 left-0   ">
+      <div className="container px-4 mx-auto md:px-16 ">
         <div className="md:flex md:flex-wrap md:-mx-4 py-6 md:pb-12">
           <div className="footer-info lg:w-1/3 md:px-4">
             <h4 className="text-white text-2xl mb-4">LightSpeed Photonics</h4>

@@ -16,23 +16,6 @@ function NavBar() {
     setNav(false);
   };
 
-  // Expand navbar on mobile
-  const navbar = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "100%",
-    height: "100%",
-    backgroundColor: "white",
-    position: "absolute",
-    top: "0",
-    left: "0",
-    zIndex: "1",
-    transition: "all 0.3s ease-in-out",
-    transform: nav ? "translateX(0)" : "translateX(-100%)",
-  };
-
   return (
     <div className="sticky top-0 z-[1] drop-shadow-md ">
       <div className="w-full  text-gray-500 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
@@ -71,36 +54,47 @@ function NavBar() {
               (nav ? "flex h-full  " : "hidden  ")
             }
           >
+            {/* Home */}
+            <div class="group relative inline-block px-2 py-2">
+              <NavLink
+                to="/"
+                onClick={handleClose}
+                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+              >
+                Home
+              </NavLink>
+            </div>
+
+            {/* products */}
             <div class="group relative inline-block px-2">
               <button class="inline-flex peer items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 ">
                 Products <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
 
               <ul class=" hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-56 z-30 md:absolute ">
-                <li class="">
-                  <a
-                    class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#_"
+                <li class="py-2 px-4">
+                  <NavLink
+                  to="/products/lightkonnect"
+                    class="whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
                   >
-                    LightKonnect
-                  </a>
+                    LightKonnect&trade;
+                  </NavLink>
                 </li>
-                <li class="">
-                  <a
-                    href="#_"
-                    target="_blank"
-                    class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                <li class="py-2 px-4">
+                  <NavLink
+                  to="/products/lightSiP"
+                    class="whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
                   >
-                    LightSiP
-                  </a>
+                    LightSiP&trade;
+                  </NavLink>
                 </li>
-                <li class="">
-                  <a
-                    href="#_"
-                    class="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                <li class="py-2 px-4 ">
+                  <NavLink
+                    to="/products/lightkonnectFiber"
+                    class="whitespace-no-wrap block rounded-t  hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
                   >
-                    LightKonnect Fiber
-                  </a>
+                    LightKonnect Fiber&trade;
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -187,7 +181,7 @@ function NavBar() {
             {/* Contact */}
             <div class="group relative inline-block px-2 py-2">
               <NavLink
-                to="/about"
+                to="/contact"
                 onClick={handleClose}
                 className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
               >
