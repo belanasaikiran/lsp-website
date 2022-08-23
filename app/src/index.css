@@ -11,12 +11,12 @@ body ::-webkit-scrollbar {
 
 /* style scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  background: #0f142a;
+  width: 7px;
+  background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f5f5f5;
+  background: #0f142a;
   border-radius: 7px;
 }
 
