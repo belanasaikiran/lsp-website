@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
+
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
   const [value, setValue] = React.useState();
