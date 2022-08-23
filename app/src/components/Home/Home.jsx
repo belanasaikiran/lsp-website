@@ -165,7 +165,7 @@ function Home() {
                 className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
-                href="https://yournest.in/_"
+                href="https://yournest.in/"
                 target="_blank"
                 className="font-semibold "
                 rel="noreferrer"
@@ -180,7 +180,7 @@ function Home() {
                 className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
               />
               <a
-                href="https://luminategroup.com/"
+                href="https://luminate.org/"
                 target="_blank"
                 className="font-semibold "
                 rel="noreferrer"
