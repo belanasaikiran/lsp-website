@@ -13,7 +13,8 @@ import Contact from "./components/ContactUs/Contact";
 import LightKonnect from "./components/Products/LightKonnect";
 import LightKonnectFiber from "./components/Products/LightKonnectFiber";
 import LightSiP from "./components/Products/LightSiP";
-import Error from "./components/404/Error404"
+import Error from "./components/404/Error404";
+import Investors from "./components/Investors/Investors"
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   return (
@@ -39,12 +40,14 @@ function App() {
             <Routes  >
               <Route path="/" element={<Home />} />
               <Route path="/company/team" element={<Team />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/company/news" element={<News />} />
+              <Route path="/company/investors" element={<Investors />} />
               <Route path="/products/lightkonnect" element={<LightKonnect />} />
               <Route path="/products/lightkonnectFiber" element={<LightKonnectFiber />} />
               <Route path="/products/lightsip" element={<LightSiP />} />
               <Route path="*" element={<Error />} />
+              <Route path="/contact" element={<Contact />} />
+
             </Routes>
               <Footer />
         </Router>

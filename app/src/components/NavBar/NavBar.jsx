@@ -122,13 +122,13 @@ function NavBar() {
                     Collaborations & Partners
                   </a>
                 </li>
-                <li className="">
-                  <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
-                    href="#_"
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                  <NavLink
+                    
+                    to="/company/investors"
                   >
                     Investors
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
