@@ -86,7 +86,7 @@ function Contact() {
             <iframe
               title="map"
               className="rounded-2xl drop-shadow-lg md:h-[600px] md:w-[700px] w-max h-[300px] "
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.1977635062718!2d103.83676189411264!3d1.300205243606868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1990e8a2fbd3%3A0x9b31156643ec9e88!2s111%20Somerset!5e0!3m2!1sen!2sin!4v1661257965341!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.57344159325!2d103.80216944525502!3d1.303500827536251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1990e8a2fbd3%3A0x9b31156643ec9e88!2s111%20Somerset!5e0!3m2!1sen!2sin!4v1661304390249!5m2!1sen!2sin"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>

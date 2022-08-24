@@ -3,7 +3,6 @@ import { AiFillCloseCircle } from "react-icons/ai";
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
-  const [value, setValue] = React.useState();
   return (
     <>
       <button
@@ -20,29 +19,31 @@ export default function Modal() {
               {/*content*/}
               <div className="md:border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="p-5 border-b border-solid border-slate-200" >
-                <div className="flex items-start justify-between  rounded-t  ">
-                  <h3 class=" text-2xl font-medium text-red-900 dark:text-white text-left">
-                    Download
-                  </h3>
-               
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black hover:text-red-900  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <AiFillCloseCircle />
-                  </button>
-                </div>
-                <p>Please enter your details and project information. <br /> We will get back to you.</p>
+                <div className="p-5 border-b border-solid border-slate-200">
+                  <div className="flex items-start justify-between  rounded-t  ">
+                    <h3 className=" text-2xl font-medium text-red-900 dark:text-white text-left">
+                      Download
+                    </h3>
+
+                    <button
+                      className="p-1 ml-auto bg-transparent border-0 text-black hover:text-red-900  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                      onClick={() => setShowModal(false)}
+                    >
+                      <AiFillCloseCircle />
+                    </button>
+                  </div>
+                  <p>
+                    Please enter your details. <br /> We will get back to you.
+                  </p>
                 </div>
 
                 <div className=" px-50 py-5  flex flex-row ">
-                  <form class="space-y-6 px-10 " action="#">
+                  <form className="space-y-6 px-10 " action="#">
                     <div className="grid md:grid-cols-2 text-gray-900 gap-4 ">
                       <div>
                         <label
                           for="name"
-                          class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                          className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
                           Name*
                         </label>
@@ -50,7 +51,7 @@ export default function Modal() {
                           type="text"
                           name="name"
                           id="name"
-                          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                           placeholder="Your Name"
                           required
                         />
@@ -58,7 +59,7 @@ export default function Modal() {
                       <div>
                         <label
                           for="email"
-                          class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                          className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
                           Email*
                         </label>
@@ -66,8 +67,8 @@ export default function Modal() {
                           type="email"
                           name="email"
                           id="email"
-                          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                          placeholder="Email"
+                          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Work Email"
                           required
                         />
                       </div>
@@ -75,7 +76,7 @@ export default function Modal() {
                       <div>
                         <label
                           for="mobile"
-                          class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                          className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
                           Mobile Number*
                         </label>
@@ -83,16 +84,15 @@ export default function Modal() {
                           name="mobile"
                           type="number"
                           id="mobile"
-                          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                          placeholder="mobile"
+                          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Mobile"
                           required
                         />
-                  
                       </div>
                       <div>
                         <label
                           for="company"
-                          class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                          className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
                           Company Name*
                         </label>
@@ -100,7 +100,7 @@ export default function Modal() {
                           name="company"
                           type="text"
                           id="company"
-                          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                           placeholder="Company"
                           required
                         />
@@ -108,7 +108,7 @@ export default function Modal() {
                       <div>
                         <label
                           for="application"
-                          class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                          className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
                           Target Application*
                         </label>
@@ -116,24 +116,24 @@ export default function Modal() {
                           name="application"
                           type="text"
                           id="application"
-                          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                           placeholder="Application"
                           required
                         />
                       </div>
                       <div>
                         <label
-                          for="quantity"
-                          class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                          for="country"
+                          className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
-                          Quantity*
+                          Country
                         </label>
                         <input
-                          name="quantity"
+                          name="country"
                           type="number"
-                          id="quantity"
-                          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                          placeholder="Quantity"
+                          id="country"
+                          className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          placeholder="Country Name"
                           required
                         />
                       </div>
@@ -142,7 +142,7 @@ export default function Modal() {
                     <div>
                       <label
                         for="message"
-                        class="block mb-2 text-sm font-medium  dark:text-gray-300"
+                        className="block mb-2 text-sm font-medium  dark:text-gray-300"
                       >
                         Message
                       </label>
@@ -151,13 +151,13 @@ export default function Modal() {
                         name="message"
                         className="bg-gray-50 border-gray-300 w-full"
                         maxLength={150}
-                      ></textarea>
+                      />
                     </div>
 
                     <div className="flex  items-center justify-center">
                       <button
                         type="submit"
-                        class="  text-white bg-red-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-16 py-2.5 text-center "
+                        className="  text-white bg-red-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-16 py-2.5 text-center "
                       >
                         Submit
                       </button>
