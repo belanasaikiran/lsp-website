@@ -59,7 +59,7 @@ function NavBar() {
               <NavLink
                 to="/"
                 onClick={handleClose}
-                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
               >
                 Home
               </NavLink>
@@ -67,31 +67,31 @@ function NavBar() {
 
             {/* products */}
             <div className="group relative inline-block px-2">
-              <button className="inline-flex peer items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 ">
+              <button className="inline-flex peer items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-red-900 decoration-4 hover:underline-offset-8 ">
                 Products <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
 
               <ul className=" hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-56 z-30 md:absolute ">
-                <li className="py-2 px-4">
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                   <NavLink
-                    to="/products/lightkonnect"
-                    className="whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                  to="/products/lightkonnect"
                   >
                     LightKonnect&trade;
                   </NavLink>
                 </li>
-                <li className="py-2 px-4">
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+
                   <NavLink
-                    to="/products/lightSiP"
-                    className="whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                  to="/products/lightSiP"
                   >
                     LightSiP&trade;
                   </NavLink>
                 </li>
-                <li className="py-2 px-4 ">
+
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                   <NavLink
+                    
                     to="/products/lightkonnectFiber"
-                    className="whitespace-no-wrap block rounded-t  hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
                   >
                     LightKonnect Fiber&trade;
                   </NavLink>
@@ -101,22 +101,22 @@ function NavBar() {
 
             {/* Company */}
             <div className="group relative inline-block px-2">
-              <button className="inline-flex items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8">
+              <button className="inline-flex items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                 Company
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
               <ul className="hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-64 z-30 md:absolute">
-                <li className="">
-                  <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
-                    href="#_"
+              <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                  <NavLink
+                    
+                    to="/company/team"
                   >
                     Team
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="">
                   <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                     href="#_"
                   >
                     Collaborations & Partners
@@ -124,7 +124,7 @@ function NavBar() {
                 </li>
                 <li className="">
                   <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                     href="#_"
                   >
                     Investors
@@ -134,23 +134,22 @@ function NavBar() {
             </div>
             {/* Insights */}
             <div className="group relative inline-block px-2">
-              <button className="inline-flex items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8">
+              <button className="inline-flex items-center rounded py-2 px-4 font-semibold hover:text-gray-900 hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                 Insights
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
               <ul className=" hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-56 z-30 md:absolute">
                 <li className="">
                   <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8 "
                     href="#_"
                   >
                     Publications
                   </a>
-                  s
                 </li>
                 <li className="">
                   <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8 "
                     href="#_"
                   >
                     Blog
@@ -158,7 +157,7 @@ function NavBar() {
                 </li>
                 <li className="">
                   <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8 hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8  "
                     href="#_"
                   >
                     News
@@ -173,7 +172,7 @@ function NavBar() {
               <NavLink
                 to="/about"
                 onClick={handleClose}
-                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
               >
                 Careers
               </NavLink>
@@ -184,7 +183,7 @@ function NavBar() {
               <NavLink
                 to="/contact"
                 onClick={handleClose}
-                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-orange-700 decoration-4 hover:underline-offset-8"
+                className="px-2  mt-2 text-base font-semibold text-gray-500  mx-2  md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
               >
                 Contact Us
               </NavLink>

@@ -13,6 +13,7 @@ import Contact from "./components/ContactUs/Contact";
 import LightKonnect from "./components/Products/LightKonnect";
 import LightKonnectFiber from "./components/Products/LightKonnectFiber";
 import LightSiP from "./components/Products/LightSiP";
+import Error from "./components/404/Error404"
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -37,12 +38,13 @@ function App() {
 
             <Routes  >
               <Route path="/" element={<Home />} />
-              <Route path="/" element={<Team />} />
+              <Route path="/company/team" element={<Team />} />
               <Route path="/news" element={<News />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/products/lightkonnect" element={<LightKonnect />} />
               <Route path="/products/lightkonnectFiber" element={<LightKonnectFiber />} />
               <Route path="/products/lightsip" element={<LightSiP />} />
+              <Route path="*" element={<Error />} />
             </Routes>
               <Footer />
         </Router>
