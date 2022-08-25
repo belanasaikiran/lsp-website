@@ -17,6 +17,7 @@ module.exports = {
       backgroundImage: {
         "bg-hero-pattern": "url('/src/assets/images/background_Image.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
+        "map": "url('./src/assets/images/map-image.png"
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],

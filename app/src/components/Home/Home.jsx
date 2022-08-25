@@ -8,9 +8,9 @@ import { GiDefenseSatellite } from "react-icons/gi";
 import { MdOutlineDeveloperBoard, MdCastForEducation } from "react-icons/md";
 import GrowX from "../../assets/Investors/GrowX.png";
 import ef_logo from "../../assets/Investors/ef_logo.png";
-import IME from "../../assets/Investors/IME.jpg";
 import Luminate from "../../assets/Investors/Luminate-NC-6-9-21-1000.jpg";
 import YourNest from "../../assets/Investors/yournest-logo-1.jpeg";
+import ESG from "../../assets/Investors/ESG.png";
 
 function Home() {
   return (
@@ -26,7 +26,7 @@ function Home() {
             <span className="bg-gradient-to-r text-red-800   hover:scale-110   ">
               Light
             </span>{" "}
-            to the Compute World !
+            to the Computing World !
           </h1>
           <p className="md:text-2xl pt-8">
             Building Lego-Like Optoelectronic Processors and Interconnects for
@@ -58,19 +58,23 @@ function Home() {
                 compute+interconnect
               </span>{" "}
               heterogeneous System-in-Package (SiP),{" "}
-              <span className="text-white font-black md:text-3xl">LightSiP™</span> resulting
-              in a scalable server reducing data latency, footprint, power
-              consumption while increasing the data bandwidth and performance
-              per watt. It incorporates proprietary high data rate free-space
-              optical interconnect,{" "}
-              <span className="text-white font-black md:text-3xl">LightKonnect™</span> for
-              protocol agnostic chip-to-chip communication. drop-shadow-xl
+              <span className="text-white font-black md:text-3xl">
+                LightSiP™
+              </span>{" "}
+              resulting in a scalable server reducing data latency, footprint,
+              power consumption while increasing the data bandwidth and
+              performance per watt. It incorporates proprietary high data rate
+              free-space optical interconnect,{" "}
+              <span className="text-white font-black md:text-3xl">
+                LightKonnect™
+              </span>{" "}
+              for protocol agnostic chip-to-chip communication. drop-shadow-xl
             </p>
             <p className="md:text-2xl pt-8  px-5 ">
               Reconfigurable electronics provides the computing power and optics
               provides the interconnect and together, the LightSiP provides upto
-              <span className="font-black md:text-3xl"> 20x</span> performance at half the
-              power.
+              <span className="font-black md:text-3xl"> 20x</span> performance
+              at half the power.
             </p>
           </div>
         </div>
@@ -128,81 +132,80 @@ function Home() {
           </h1>
 
           <div className="grid md:grid-cols-5 md:text-base text-2xl  gap-5 justify-items-center text-center pt-14">
-            <div>
-              <img
-                src={GrowX}
-                alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
-              />
-              <a
-                href="http://growxventures.com/"
-                target="_blank"
-                className="font-semibold "
-                rel="noreferrer"
-              >
-                GrowX
-              </a>
-            </div>
-            <div>
-              <img
-                src={ef_logo}
-                alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
-              />
+          <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
               <a
                 href="https://www.joinef.com/"
                 target="_blank"
-                className="font-semibold "
-                rel="noreferrer"
+                className="font-semibold    "
               >
+                <img
+                  src={ef_logo}
+                  alt="Investor1"
+                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto "
+                />
                 Entrepreneur First
               </a>
             </div>
-            <div>
-              <img
-                src={YourNest}
-                alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
-              />
-              <a
-                href="https://yournest.in/"
-                target="_blank"
-                className="font-semibold "
-                rel="noreferrer"
-              >
-                Your Nest
-              </a>
-            </div>
-            <div>
-              <img
-                src={Luminate}
-                alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
-              />
+            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
               <a
                 href="https://luminate.org/"
                 target="_blank"
                 className="font-semibold "
-                rel="noreferrer"
               >
+                <img
+                  src={Luminate}
+                  alt="Investor1"
+                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
+                />
                 Luminate
               </a>
             </div>
-            <div>
-              <img
-                src={IME}
-                alt="Investor1"
-                className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg "
-              />
+            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
               <a
                 href="https://www.a-star.edu.sg/ime"
                 target="_blank"
                 className="font-semibold "
-                rel="noreferrer"
               >
-                IME A*STAR
+                <img
+                  src={ESG}
+                  alt="Investor1"
+                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto bg-white "
+                />
+                Enterprise Singapore
               </a>
             </div>
+         
+         
+            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
+              <a
+                href="https://yournest.in/"
+                target="_blank"
+                className="font-semibold "
+              >
+                <img
+                  src={YourNest}
+                  alt="Investor1"
+                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
+                />
+                Your Nest
+              </a>
+            </div>
+            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
+              <a
+                href="http://growxventures.com/"
+                target="_blank"
+                className="font-semibold  "
+              >
+                <img
+                  src={GrowX}
+                  alt="Investor1"
+                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
+                />
+                GrowX
+              </a>
+            </div>
+        
+          
           </div>
           {/* <div className="text-center pt-16   ">
             <p className="text-xl font-medium">

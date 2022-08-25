@@ -74,15 +74,16 @@ function NavBar() {
               <ul className=" hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-56 z-30 md:absolute ">
                 <li className="py-2 px-4 whitespace-no-wrap block rounded-t hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                   <NavLink
-                  to="/products/lightkonnect"
+                    to="/products/lightkonnect"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     LightKonnect&trade;
                   </NavLink>
                 </li>
                 <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
-
                   <NavLink
-                  to="/products/lightSiP"
+                    to="/products/lightSiP"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     LightSiP&trade;
                   </NavLink>
@@ -90,8 +91,8 @@ function NavBar() {
 
                 <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                   <NavLink
-                    
                     to="/products/lightkonnectFiber"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     LightKonnect Fiber&trade;
                   </NavLink>
@@ -106,28 +107,36 @@ function NavBar() {
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
               <ul className="hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-64 z-30 md:absolute">
-              <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                   <NavLink
-                    
                     to="/company/team"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     Team
                   </NavLink>
                 </li>
-                <li className="">
-                  <a
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
-                    href="#_"
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                  <NavLink
+                    to="/company/collaborations&partners"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     Collaborations & Partners
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
                   <NavLink
-                    
                     to="/company/investors"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     Investors
+                  </NavLink>
+                </li>
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                  <NavLink
+                    to="/company/gallery"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
+                  >
+                    Gallery
                   </NavLink>
                 </li>
               </ul>
