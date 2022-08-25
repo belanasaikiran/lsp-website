@@ -44,7 +44,7 @@ function Contact() {
         <div className="flex flex-row ">
           {" "}
           <button
-            className="bg-linkedin py-2 px-4 text-white rounded mt-2 transition-colors duration-300"
+            className="bg-linkedin py-4 px-5 text-white hover:bg-gray-700  rounded ml-2 mt-2  transition-colors duration-300"
             onClick={() =>
               window.open(
                 "https://www.linkedin.com/company/lightspeedai/",
@@ -52,10 +52,10 @@ function Contact() {
               )
             }
           >
-            <FaLinkedin />
+            <FaLinkedin className="" />
           </button>
           <button
-            className="bg-twitter py-2 px-4 text-white rounded ml-2 mt-2 transition-colors duration-300"
+            className="bg-twitter py-4 px-5 text-white hover:bg-gray-700  rounded ml-2 mt-2 transition-colors duration-300"
             onClick={() =>
               window.open("https://twitter.com/LSPhotonics", "_blank")
             }
@@ -78,7 +78,7 @@ function Contact() {
           Us
         </h1>
         <div className="grid md:grid-cols-2 justify-items-center py-8 ">
-          <div className="md:px-24">
+          <div className="md:pl-24">
             <motion.div
               className="box"
               whileHover={{ scale: 1.05 }}
@@ -93,7 +93,7 @@ function Contact() {
               ></iframe>
             </motion.div>
           </div>
-          <div className="py-20 md:px-20">
+          <div className="py-20 md:px-20 px-0">
             <div className="grid md:grid-cols-2 md:gap-20 md:px-0 px-10 gap-2 text-left align-center justify-evenly   ">
               {/* Contact Info */}
               {ContactInfo.map((info) => (
@@ -113,7 +113,7 @@ function Contact() {
         <h1 className="text-3xl text-red-900 font-bold py-4 ">Write to Us</h1>
         <div className=" py-5    ">
           <form className="space-y-6  " action="#">
-            <div className=" grid grid-cols-2 text-gray-900 gap-4">
+            <div className=" grid md:grid-cols-2 text-gray-900 gap-4 md:px-0 px-8">
               <input
                 type="text"
                 name="name"
@@ -135,7 +135,7 @@ function Contact() {
               <textarea
                 rows="10"
                 name="message"
-                className=" col-span-2 bg-gray-50 border border-gray-300 text-sm  block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                className=" md:col-span-2 bg-gray-50 border border-gray-300 text-sm  block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 maxLength={280}
                 placeholder="your message"
               />
@@ -144,7 +144,7 @@ function Contact() {
               type="submit"
               className="  inline-flex text-white bg-red-900 hover:bg-white hover:text-red-900 hover:border-2 hover:border-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-base px-8 py-2.5 text-center "
             >
-            Send  <AiOutlineMail className="ml-2 mt-1 scale-110" />
+              Send <AiOutlineMail className="ml-2 mt-1 scale-110" />
             </button>
           </form>
         </div>

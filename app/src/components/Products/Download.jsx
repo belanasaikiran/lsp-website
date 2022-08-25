@@ -110,7 +110,7 @@ export default function Modal() {
                           for="application"
                           className="block mb-2 text-sm font-medium  dark:text-gray-300"
                         >
-                          Target Application*
+                          Target Application
                         </label>
                         <input
                           name="application"
@@ -118,7 +118,6 @@ export default function Modal() {
                           id="application"
                           className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                           placeholder="Application"
-                          required
                         />
                       </div>
                       <div>
@@ -130,7 +129,7 @@ export default function Modal() {
                         </label>
                         <input
                           name="country"
-                          type="number"
+                          type="text"
                           id="country"
                           className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                           placeholder="Country Name"
