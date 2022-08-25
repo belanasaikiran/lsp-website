@@ -15,25 +15,21 @@ import ESG from "../../assets/Investors/ESG.png";
 function Home() {
   return (
     <div>
-      <div
-        className="grid md:grid-flow-col md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164   "
-
-        // add background image
-      >
-        <div className="md:flex flex-col text-black items-center pt-1 md:pt-8">
-          <h1 className="md:text-5xl text-3xl  text-semibold font-bold md:text-left md:leading-[4rem]  ">
+      <div className="grid md:grid-flow-col  md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164">
+        <div className="md:grid grid-col-1 text-black content-center pt-1 md:pt-8">
+          <h1 className="md:text-6xl text-3xl  text-semibold font-bold md:text-left md:leading-[4rem]  ">
             Bringing{" "}
             <span className="bg-gradient-to-r text-red-800   hover:scale-110   ">
               Light
             </span>{" "}
             to the Computing World !
           </h1>
-          <p className="md:text-2xl pt-8">
+          <p className="md:text-3xl pt-8">
             Building Lego-Like Optoelectronic Processors and Interconnects for
             DataCenters and near-Edge Compute
           </p>
         </div>
-        <div>
+        <div className="col-span-2 ">
           <motion.div
             className="box"
             whileHover={{ scale: 1.1 }}
@@ -46,7 +42,7 @@ function Home() {
 
       {/* Section -2 */}
       <div>
-        <div className="md:px-60 px-2 py-12  bg-red-900 ">
+        <div className="md:px-60 px-2 py-32  bg-red-900 ">
           <div className=" text-gray-100  items-center text-center pt-1 md:pt-8">
             <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem]  ">
               At LightSpeed Photonics,
@@ -83,7 +79,7 @@ function Home() {
       {/* Section-3 */}
       <div className="md:px-60 px-2 py-12">
         <div className="pb-16">
-          <h1 className="md:text-3xl text-2xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 ">
+          <h1 className="md:text-4xl text-3xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 ">
             WHO MAY BENEFIT FROM US
           </h1>
         </div>
@@ -91,34 +87,34 @@ function Home() {
           {/* Telecom */}
           <div className="flex flex-col items-center py-4 gap-4">
             <FaServer className="w-28 h-28 " />
-            <h2 className="text-xl font-medium">
+            <h2 className="text-2xl font-medium">
               DATA CENTERs & I<span className="text-sm">AA</span>S
             </h2>
             <p className="text-left">Description</p>
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <VscRadioTower className="w-28 h-28 " />
-            <h2 className="text-xl font-medium">TELECOM & 5G</h2>
+            <h2 className="text-2xl font-medium">TELECOM & 5G</h2>
             <p className="text-left">Description</p>
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <GrCloudComputer className="w-28 h-28 " />
-            <h2 className="text-xl font-medium">EDGE COMPUTING</h2>
+            <h2 className="text-2xl font-medium">EDGE COMPUTING</h2>
             <p className="text-left">Description</p>
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <GiDefenseSatellite className="w-28 h-28 " />
-            <h2 className="text-xl font-medium">DEFENCE</h2>
+            <h2 className="text-2xl font-medium">DEFENCE</h2>
             <p className="text-left">Description</p>
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <MdOutlineDeveloperBoard className="w-28 h-28 " />
-            <h2 className="text-xl font-medium">RESEARCH & DEVELOPMENT</h2>
+            <h2 className="text-2xl font-medium">RESEARCH & DEVELOPMENT</h2>
             <p className="text-left">Description</p>
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <MdCastForEducation className="w-28 h-28 " />
-            <h2 className="text-xl font-medium">EDUCATION</h2>
+            <h2 className="text-2xl font-medium">EDUCATION</h2>
             <p className="text-left">Description</p>
           </div>
         </div>
@@ -127,16 +123,16 @@ function Home() {
       {/* Section - 4 -> Investors */}
       <div className="md:px-60 px-2 py-12 bg-gray-100">
         <div className="pb-16">
-          <h1 className="md:text-3xl text-2xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 uppercase ">
+          <h1 className="md:text-4xl text-3xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 uppercase ">
             Our Investors
           </h1>
 
           <div className="grid md:grid-cols-5 md:text-base text-2xl  gap-5 justify-items-center text-center pt-14">
-          <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
+            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
               <a
                 href="https://www.joinef.com/"
                 target="_blank"
-              rel="noreferrer"
+                rel="noreferrer"
                 className="font-semibold    "
               >
                 <img
@@ -151,7 +147,7 @@ function Home() {
               <a
                 href="https://luminate.org/"
                 target="_blank"
-              rel="noreferrer"
+                rel="noreferrer"
                 className="font-semibold "
               >
                 <img
@@ -166,7 +162,7 @@ function Home() {
               <a
                 href="https://www.a-star.edu.sg/ime"
                 target="_blank"
-              rel="noreferrer"
+                rel="noreferrer"
                 className="font-semibold "
               >
                 <img
@@ -177,13 +173,12 @@ function Home() {
                 Enterprise Singapore
               </a>
             </div>
-         
-         
+
             <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
               <a
                 href="https://yournest.in/"
                 target="_blank"
-              rel="noreferrer"
+                rel="noreferrer"
                 className="font-semibold "
               >
                 <img
@@ -198,7 +193,7 @@ function Home() {
               <a
                 href="http://growxventures.com/"
                 target="_blank"
-              rel="noreferrer"
+                rel="noreferrer"
                 className="font-semibold  "
               >
                 <img
@@ -209,8 +204,6 @@ function Home() {
                 GrowX
               </a>
             </div>
-        
-          
           </div>
           {/* <div className="text-center pt-16   ">
             <p className="text-xl font-medium">
