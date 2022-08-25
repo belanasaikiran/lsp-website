@@ -51,7 +51,7 @@ const InvestorsInfo = [
 function Investors() {
   return (
     <div className="md:px-80 px-2 pb-16 bg-gray-100">
-    <h1 className="text-center text-5xl font-bold py-4" >Our Investors</h1>
+    <h1 className="text-center text-5xl font-bold py-4 uppercase" >Our Investors</h1>
       {InvestorsInfo.map((investor) => (
         <div className="grid md:grid-cols-3 justify-items-center md:gap-0 gap-4   py-4 hover:scale-105 hover:bg-gray-200 hover:rounded-lg   duration-300 transition-all  ">
           <div className="md:pl-16 md:col-span-1 col-span-2   ">

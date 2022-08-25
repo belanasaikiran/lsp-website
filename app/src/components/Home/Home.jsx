@@ -127,7 +127,7 @@ function Home() {
       {/* Section - 4 -> Investors */}
       <div className="md:px-60 px-2 py-12 bg-gray-100">
         <div className="pb-16">
-          <h1 className="md:text-3xl text-2xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 ">
+          <h1 className="md:text-3xl text-2xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 uppercase ">
             Our Investors
           </h1>
 
@@ -136,6 +136,7 @@ function Home() {
               <a
                 href="https://www.joinef.com/"
                 target="_blank"
+              rel="noreferrer"
                 className="font-semibold    "
               >
                 <img
@@ -150,6 +151,7 @@ function Home() {
               <a
                 href="https://luminate.org/"
                 target="_blank"
+              rel="noreferrer"
                 className="font-semibold "
               >
                 <img
@@ -164,6 +166,7 @@ function Home() {
               <a
                 href="https://www.a-star.edu.sg/ime"
                 target="_blank"
+              rel="noreferrer"
                 className="font-semibold "
               >
                 <img
@@ -180,6 +183,7 @@ function Home() {
               <a
                 href="https://yournest.in/"
                 target="_blank"
+              rel="noreferrer"
                 className="font-semibold "
               >
                 <img
@@ -194,6 +198,7 @@ function Home() {
               <a
                 href="http://growxventures.com/"
                 target="_blank"
+              rel="noreferrer"
                 className="font-semibold  "
               >
                 <img
