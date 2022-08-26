@@ -13,25 +13,25 @@ function NavBar() {
 
   const handleClose = () => {
     setNav(false);
-  };
-
-  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
 
+  const scrollToTop = () => {};
+
   return (
     <div className="sticky top-0 z-[1] drop-shadow-md ">
       <div className="w-full  text-gray-500 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div
-          onClick={scrollToTop}
+          // onClick={scrollToTop}
           className="flex flex-col max-w-screen-xl  mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
         >
           {/* Nav Content */}
           <div className={"p-4 flex flex-row items-center justify-between"}>
             <NavLink
+              onClick={handleClose}
               to="/"
               className=" uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
             >
