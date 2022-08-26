@@ -45,7 +45,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-12 h-12 hover:bg-white hover:text-red-900 hover:border-2 hover:border-red-900  p-2 bg-red-900 m-8 text-white rounded-full drop-shadow-xl"
+                className="w-12 h-12  hover:text-red-900 hover:border-2 hover:border-red-900 bg-white hover:opacity-100 opacity-50  p-2  m-8 text-red-900 rounded-full drop-shadow-xl"
               >
                 <path
                   stroke-linecap="round"

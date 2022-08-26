@@ -6,11 +6,8 @@ import { FaServer } from "react-icons/fa";
 import { GrCloudComputer } from "react-icons/gr";
 import { GiDefenseSatellite } from "react-icons/gi";
 import { MdOutlineDeveloperBoard, MdCastForEducation } from "react-icons/md";
-import GrowX from "../../assets/Investors/GrowX.png";
-import ef_logo from "../../assets/Investors/ef_logo.png";
-import Luminate from "../../assets/Investors/Luminate-NC-6-9-21-1000.jpg";
-import YourNest from "../../assets/Investors/yournest-logo-1.jpeg";
-import ESG from "../../assets/Investors/ESG.png";
+
+import InvestorImages from "../../assets/Azure/InvestorImages"
 
 function Home() {
   return (
@@ -136,7 +133,7 @@ function Home() {
                 className="font-semibold    "
               >
                 <img
-                  src={ef_logo}
+                  src={InvestorImages.EF}
                   alt="Investor1"
                   className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto "
                 />
@@ -151,7 +148,7 @@ function Home() {
                 className="font-semibold "
               >
                 <img
-                  src={Luminate}
+                  src={InvestorImages.Luminate}
                   alt="Investor1"
                   className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
                 />
@@ -166,7 +163,7 @@ function Home() {
                 className="font-semibold "
               >
                 <img
-                  src={ESG}
+                  src={InvestorImages.ESG}
                   alt="Investor1"
                   className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto bg-white "
                 />
@@ -182,7 +179,7 @@ function Home() {
                 className="font-semibold "
               >
                 <img
-                  src={YourNest}
+                  src={InvestorImages.YourNest}
                   alt="Investor1"
                   className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
                 />
@@ -197,7 +194,7 @@ function Home() {
                 className="font-semibold  "
               >
                 <img
-                  src={GrowX}
+                  src={InvestorImages.GrowX}
                   alt="Investor1"
                   className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
                 />

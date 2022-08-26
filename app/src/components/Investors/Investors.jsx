@@ -1,13 +1,8 @@
 import React from "react";
-import YourNest from "../../assets/Investors/yournest-logo-1.jpeg";
-import EF from "../../assets/Investors/ef_logo.png";
-import GrowX from "../../assets/Investors/GrowX.png";
-import Luminate from "../../assets/Investors/Luminate-NC-6-9-21-1000.jpg";
-import ESG from "../../assets/Investors/ESG.png";
 
 const InvestorsInfo = [
   {
-    image: EF,
+    image: "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/ef_logo.png",
     alt_name: "EF Logo",
     CompanyName: "Entrepreneur First",
     description:
@@ -15,7 +10,7 @@ const InvestorsInfo = [
     link: "https://www.joinef.com/",
   },
   {
-    image: Luminate,
+    image:"https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/Luminate-NC-6-9-21-1000.jpg",
     alt_name: "Luminate Logo",
     CompanyName: "Luminate NextCorps",
     description:
@@ -23,7 +18,7 @@ const InvestorsInfo = [
     link: "https://luminate.org/",
   },
   {
-    image: ESG,
+    image: "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/ESG.png",
     alt_name: "Enterprise SG Logo",
     CompanyName: "Enterprise Singapore",
     description:
@@ -31,7 +26,7 @@ const InvestorsInfo = [
     link: "https://www.enterprisesg.gov.sg/",
   },
   {
-    image: YourNest,
+    image: "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/yournest-logo-1.jpeg",
     alt_name: "Your Nest Logo",
     CompanyName: "Your Nest",
     description:
@@ -39,19 +34,19 @@ const InvestorsInfo = [
     link: "https://yournest.in/",
   },
   {
-    image: GrowX,
+    image: "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/GrowX.png",
     alt_name: "GrowX Logo",
     CompanyName: "GrowX",
     description:
-      "growX is a B2Band DeepTech focused early-stage venture fund which works closely with investee firms at both strategic and operational levels to drive scale and success. Its investments are focused on seed and pre-Series A stages across a wide range of sectors. growX has invested in over 35 companies like Fynd, Locus, Mad Street Den, Pixxel, Progcap, Wellthy, and Zipolan, among others.",
+      "growX is a B2B and DeepTech focused early-stage venture fund which works closely with investee firms at both strategic and operational levels to drive scale and success. Its investments are focused on seed and pre-Series A stages across a wide range of sectors. growX has invested in over 35 companies like Fynd, Locus, Mad Street Den, Pixxel, Progcap, Wellthy, and Zipolan, among others.",
     link: "https://yournest.in/",
   },
 ];
 
 function Investors() {
   return (
-    <div className="md:px-80 px-2 pb-16 bg-gray-100">
-    <h1 className="text-center text-5xl font-bold py-4 uppercase" >Our Investors</h1>
+    <div className="md:px-80  px-2 pb-16 bg-gray-100">
+    <h1 className="text-center py-20 text-5xl font-bold  uppercase" >Our Investors</h1>
       {InvestorsInfo.map((investor) => (
         <div className="grid md:grid-cols-3 justify-items-center md:gap-0 gap-4   py-4 hover:scale-105 hover:bg-gray-200 hover:rounded-lg   duration-300 transition-all  ">
           <div className="md:pl-16 md:col-span-1 col-span-2   ">

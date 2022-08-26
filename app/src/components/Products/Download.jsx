@@ -6,18 +6,19 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-red-900 hover:bg-red-700 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-red-900 hover:bg-red-700 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none  focus:outline-none mr-1 mb-1 ease-linear transition-all duration-300"
         type="button"
         onClick={() => setShowModal(true)}
       >
         Download Brochure
       </button>
       {showModal ? (
-        <>
-          <div className="justify-center md:items-center flex md:overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+        
+        <  >
+          <div className="justify-center md:items-center flex md:overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
             <div className="relative w-auto md:my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="md:border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="md:border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none  ">
                 {/*header*/}
                 <div className="p-5 border-b border-solid border-slate-200">
                   <div className="flex items-start justify-between  rounded-t  ">
@@ -166,7 +167,7 @@ export default function Modal() {
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+          <div className="opacity-50  fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
     </>
