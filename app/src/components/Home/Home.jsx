@@ -7,7 +7,9 @@ import { GrCloudComputer } from "react-icons/gr";
 import { GiDefenseSatellite } from "react-icons/gi";
 import { MdOutlineDeveloperBoard, MdCastForEducation } from "react-icons/md";
 
-import InvestorImages from "../../assets/Azure/InvestorImages"
+import InvestorsInfo from "../Azure/InvestorInfo";
+
+// console.log(InvestorImages[0].GrowX);
 
 function Home() {
   return (
@@ -125,90 +127,31 @@ function Home() {
           </h1>
 
           <div className="grid md:grid-cols-5 md:text-base text-2xl  gap-5 justify-items-center text-center pt-14">
-            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
-              <a
-                href="https://www.joinef.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold    "
-              >
-                <img
-                  src={InvestorImages.EF}
-                  alt="Investor1"
-                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto "
-                />
-                Entrepreneur First
-              </a>
-            </div>
-            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
-              <a
-                href="https://luminate.org/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold "
-              >
-                <img
-                  src={InvestorImages.Luminate}
-                  alt="Investor1"
-                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
-                />
-                Luminate
-              </a>
-            </div>
-            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
-              <a
-                href="https://www.a-star.edu.sg/ime"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold "
-              >
-                <img
-                  src={InvestorImages.ESG}
-                  alt="Investor1"
-                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto bg-white "
-                />
-                Enterprise Singapore
-              </a>
-            </div>
-
-            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
-              <a
-                href="https://yournest.in/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold "
-              >
-                <img
-                  src={InvestorImages.YourNest}
-                  alt="Investor1"
-                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
-                />
-                Your Nest
-              </a>
-            </div>
-            <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl">
-              <a
-                href="http://growxventures.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold  "
-              >
-                <img
-                  src={InvestorImages.GrowX}
-                  alt="Investor1"
-                  className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto"
-                />
-                GrowX
-              </a>
-            </div>
+            {InvestorsInfo.map((investors) => (
+              <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
+                <a
+                  href={investors.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold    "
+                >
+                  <img
+                    src={investors.image}
+                    alt={investors.alt_name}
+                    className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto bg-white "
+                  />
+                  {investors.CompanyName}
+                </a>
+              </div>
+            ))}
           </div>
-          {/* <div className="text-center pt-16   ">
+        </div>
+        {/* <div className="text-center pt-16   ">
             <p className="text-xl font-medium">
               {" "}
               Want to Partner with us ? <span> </span>
             </p>
           </div> */}
-        </div>
       </div>
     </div>
   );
