@@ -1,5 +1,4 @@
 import React from "react";
-import SIP from "../../assets/images/2legoSIP2.png";
 import { motion } from "framer-motion";
 import { VscRadioTower } from "react-icons/vsc";
 import { FaServer } from "react-icons/fa";
@@ -9,21 +8,23 @@ import { MdOutlineDeveloperBoard, MdCastForEducation } from "react-icons/md";
 
 import InvestorsInfo from "../Azure/InvestorInfo";
 
+const SIP =
+  "https://lspwebstorage.blob.core.windows.net/webstore-files/Homepage/2legoSIP2.jpg";
 // console.log(InvestorImages[0].GrowX);
 
 function Home() {
   return (
     <div>
       <div className="grid md:grid-flow-col  md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164">
-        <div className="md:grid grid-col-1 text-black content-center pt-1 md:pt-8">
-          <h1 className="md:text-6xl text-3xl  text-semibold font-bold md:text-left md:leading-[4rem]  ">
+        <div className="md:grid grid-col-1 text-black content-center pt-1 md:pt-8 md:col-span-1 col-span-2">
+          <h1 className="md:text-6xl text-4xl  text-semibold font-bold md:text-left text-center md:leading-[4rem] py-4 ">
             Bringing{" "}
             <span className="bg-gradient-to-r text-red-800   hover:scale-110   ">
               Light
             </span>{" "}
             to the Computing World !
           </h1>
-          <p className="md:text-3xl pt-8">
+          <p className="md:text-3xl pt-8 md:text-left text-center">
             Building Lego-Like Optoelectronic Processors and Interconnects for
             DataCenters and near-Edge Compute
           </p>
@@ -43,7 +44,7 @@ function Home() {
       <div>
         <div className="md:px-60 px-2 py-32  bg-red-900 ">
           <div className=" text-gray-100  items-center text-center pt-1 md:pt-8">
-            <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem]  ">
+            <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem] uppercase  ">
               At LightSpeed Photonics,
             </h1>
             <p className="md:text-2xl pt-16  px-5 ">
@@ -82,7 +83,7 @@ function Home() {
             WHO MAY BENEFIT FROM US
           </h1>
         </div>
-        <div className="grid md:grid-cols-3 gap-4 text-center">
+        <div className="grid md:grid-cols-3   gap-4 text-center">
           {/* Telecom */}
           <div className="flex flex-col items-center py-4 gap-4">
             <FaServer className="w-28 h-28 " />
@@ -101,11 +102,13 @@ function Home() {
             <h2 className="text-2xl font-medium">EDGE COMPUTING</h2>
             <p className="text-left">Description</p>
           </div>
-          <div className="flex flex-col items-center py-4 gap-4">
+        </div>
+        {/* <div className="flex flex-col items-center py-4 gap-4">
             <GiDefenseSatellite className="w-28 h-28 " />
             <h2 className="text-2xl font-medium">DEFENCE</h2>
             <p className="text-left">Description</p>
-          </div>
+          </div> */}
+        <div className="grid md:grid-cols-2 md:py-16  text-center">
           <div className="flex flex-col items-center py-4 gap-4">
             <MdOutlineDeveloperBoard className="w-28 h-28 " />
             <h2 className="text-2xl font-medium">RESEARCH & DEVELOPMENT</h2>
@@ -131,11 +134,13 @@ function Home() {
               <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
                 <a
                   href={investors.link}
+                  key="{investors}"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold    "
+                  className="font-semibold  text-xl  "
                 >
                   <img
+                    key="{investors}"
                     src={investors.image}
                     alt={investors.alt_name}
                     className="md:w-32 md:h-32 md:p-0  p-5 mb-4 drop-shadow-lg block m-auto bg-white "

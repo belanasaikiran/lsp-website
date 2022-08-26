@@ -26,7 +26,7 @@ function Contact() {
           For general information or inquires, please email us at{" "}
           <span className="font-semibold">
             {" "}
-            contact@lightspeedphotonics.com
+            contact[at]lightspeedphotonics[dot]com
           </span>
         </div>
       ),
