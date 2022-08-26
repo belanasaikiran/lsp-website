@@ -8,8 +8,9 @@ import { MdOutlineDeveloperBoard, MdCastForEducation } from "react-icons/md";
 
 import InvestorsInfo from "../Azure/InvestorInfo";
 
+// Need to add all images to Azure CDN
 const SIP =
-  "https://lspwebstorage.blob.core.windows.net/webstore-files/Homepage/2legoSIP2.jpg";
+  "https://lightspeedphotonics-gallery.azureedge.net/Homepage/2legoSIP2.png";
 // console.log(InvestorImages[0].GrowX);
 
 function Home() {
