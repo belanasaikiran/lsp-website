@@ -1,7 +1,10 @@
+const CDN = "https://lightspeedphotonics-gallery.azureedge.net/";
+
+
 const InvestorsInfo = [
   {
     image:
-      "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/ef_logo.png",
+    `${CDN}/Investors/ef_logo.png`,
     alt_name: "EF Logo",
     CompanyName: "Entrepreneur First",
     description:
@@ -10,7 +13,7 @@ const InvestorsInfo = [
   },
   {
     image:
-      "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/Luminate-NC-6-9-21-1000.jpg",
+    `${CDN}/Investors/Luminate-NC-6-9-21-1000.jpg`,
     alt_name: "Luminate Logo",
     CompanyName: "Luminate NextCorps",
     description:
@@ -19,7 +22,7 @@ const InvestorsInfo = [
   },
   {
     image:
-      "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/ESG.png",
+    `${CDN}/Investors/ESG.png`,
     alt_name: "Enterprise SG Logo",
     CompanyName: "Enterprise Singapore",
     description:
@@ -28,7 +31,7 @@ const InvestorsInfo = [
   },
   {
     image:
-      "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/yournest-logo-1.jpeg",
+    `${CDN}/Investors/yournest-logo-1.jpeg`,
     alt_name: "Your Nest Logo",
     CompanyName: "Your Nest",
     description:
@@ -37,7 +40,7 @@ const InvestorsInfo = [
   },
   {
     image:
-      "https://lspwebstorage.blob.core.windows.net/webstore-files/Investors/GrowX.png",
+    `${CDN}/Investors/GrowX.png`,
     alt_name: "GrowX Logo",
     CompanyName: "GrowX",
     description:
@@ -46,4 +49,7 @@ const InvestorsInfo = [
   },
 ];
 
-export default InvestorsInfo;
+
+
+export default CDN;
+export {InvestorsInfo};

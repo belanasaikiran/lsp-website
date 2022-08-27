@@ -3,20 +3,20 @@ import { motion } from "framer-motion";
 import { VscRadioTower } from "react-icons/vsc";
 import { FaServer } from "react-icons/fa";
 import { GrCloudComputer } from "react-icons/gr";
-import { GiDefenseSatellite } from "react-icons/gi";
 import { MdOutlineDeveloperBoard, MdCastForEducation } from "react-icons/md";
 
-import InvestorsInfo from "../Azure/InvestorInfo";
+import CDN, { InvestorsInfo } from "../Azure/cdn";
 
 // Need to add all images to Azure CDN
-const SIP =
-  "https://lightspeedphotonics-gallery.azureedge.net/Homepage/2legoSIP2.png";
+const SIP = `${CDN}/Homepage/2legoSIP2.png`;
 // console.log(InvestorImages[0].GrowX);
 
 function Home() {
   return (
     <div>
-      <div className="grid md:grid-flow-col  md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164">
+      <div
+        className="grid md:grid-flow-col  md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164"
+      >
         <div className="md:grid grid-col-1 text-black content-center pt-1 md:pt-8 md:col-span-1 col-span-2">
           <h1 className="md:text-6xl text-4xl  text-semibold font-bold md:text-left text-center md:leading-[4rem] py-4 ">
             Bringing{" "}
@@ -43,8 +43,8 @@ function Home() {
 
       {/* Section -2 */}
       <div>
-        <div className="md:px-60 px-2 py-32  bg-red-900 ">
-          <div className=" text-gray-100  items-center text-center pt-1 md:pt-8">
+        <div className="md:px-72 px-2 py-32  bg-red-900 ">
+          <div className=" text-gray-100  items-center text-center pt-1 md:pt-8 ">
             <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem] uppercase  ">
               At LightSpeed Photonics,
             </h1>
@@ -65,7 +65,7 @@ function Home() {
               <span className="text-white font-black md:text-3xl">
                 LightKonnect™
               </span>{" "}
-              for protocol agnostic chip-to-chip communication. drop-shadow-xl
+              for protocol agnostic chip-to-chip communication. 
             </p>
             <p className="md:text-2xl pt-8  px-5 ">
               Reconfigurable electronics provides the computing power and optics
@@ -91,17 +91,17 @@ function Home() {
             <h2 className="text-2xl font-medium">
               DATA CENTERs & I<span className="text-sm">AA</span>S
             </h2>
-            <p className="text-left">Description</p>
+            {/* <p className="text-left">Description</p> */}
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <VscRadioTower className="w-28 h-28 " />
             <h2 className="text-2xl font-medium">TELECOM & 5G</h2>
-            <p className="text-left">Description</p>
+            {/* <p className="text-left">Description</p> */}
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <GrCloudComputer className="w-28 h-28 " />
             <h2 className="text-2xl font-medium">EDGE COMPUTING</h2>
-            <p className="text-left">Description</p>
+            {/* <p className="text-left">Description</p> */}
           </div>
         </div>
         {/* <div className="flex flex-col items-center py-4 gap-4">
@@ -113,12 +113,12 @@ function Home() {
           <div className="flex flex-col items-center py-4 gap-4">
             <MdOutlineDeveloperBoard className="w-28 h-28 " />
             <h2 className="text-2xl font-medium">RESEARCH & DEVELOPMENT</h2>
-            <p className="text-left">Description</p>
+            {/* <p className="text-left">Description</p> */}
           </div>
           <div className="flex flex-col items-center py-4 gap-4">
             <MdCastForEducation className="w-28 h-28 " />
             <h2 className="text-2xl font-medium">EDUCATION</h2>
-            <p className="text-left">Description</p>
+            {/* <p className="text-left">Description</p> */}
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@ function Home() {
                   key="{investors}"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-semibold  text-xl  "
+                  className="font-semibold  text-lg  "
                 >
                   <img
                     key="{investors}"

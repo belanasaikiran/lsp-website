@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import LKImage from "../../assets/Products/LSAI-A0001-02-01.1.png";
 import Download from "./Download";
+
+import CDN from "../Azure/cdn";
+
+// Need to add all images to Azure CDN
+const LKImage = `${CDN}/Products/LSAI-A0001-02-01.1.png`;
 
 function LightKonnect() {
   return (
@@ -41,39 +45,43 @@ function LightKonnect() {
         </div>
       </div>
 
+      <div className="grid md:grid-cols-2 md:gap-0 gap-4 py-10">
+        <div className=" md:px-8 px-8">
+          <div className="text-3xl text-red-900 font-semibold ">Features:</div>
+          <div>
+            <ul className="list-disc pl-10 pt-6 text-lg">
+              <li>Free-space optical interconnect</li>
+              <li>Protocol agnostic chip-to-chip communication</li>
+              <li>Single 3.3 V Supply</li>
+              <li>Links up to distances of 150 mm between modules</li>
+              <li>16Gbps x 12 channel Transmit and Receive lanes</li>
+              <li>200Gbps/mm (Parallel) – NRZ</li>
+              <li>
+                &#60; 50mW per channel Power consumption ( &#60; 3pJ/bit )
+              </li>
+              <li>I2C Programmable Interface Tx and Rx</li>
+            </ul>
+          </div>
+        </div>
 
-<div className="grid md:grid-cols-2 md:gap-0 gap-4 py-10" >
-      <div className=" md:px-8 px-8">
-        <div className="text-3xl text-red-900 font-semibold ">Features:</div>
-        <div>
-          <ul className="list-disc pl-10 pt-6 text-lg">
-            <li>Free-space optical interconnect</li>
-            <li>Protocol agnostic chip-to-chip communication</li>
-            <li>Single 3.3 V Supply</li>
-            <li>Links up to distances of 150 mm between modules</li>
-            <li>16Gbps x 12 channel Transmit and Receive lanes</li>
-            <li>200Gbps/mm (Parallel) – NRZ</li>
-            <li>&#60; 50mW per channel Power consumption ( &#60; 3pJ/bit )</li>
-            <li>I2C Programmable Interface Tx and Rx</li>
-          </ul>
+        <div className="md:px-8 px-8">
+          <div className="text-3xl text-red-900 font-semibold ">
+            Applications:
+          </div>
+          <div>
+            <ul className="list-disc pl-10 pt-6 text-lg">
+              <li>200/400/800 GbE interconnects with FDR and EDR channels.</li>
+              <li>
+                Data Aggregation, Proprietary Protocol and Density Applications.
+              </li>
+              <li>
+                High Performance and High Productivity computer interconnects.
+              </li>
+              <li>Switch Fabric interconnects.</li>
+            </ul>
+          </div>
         </div>
       </div>
-
-
-      <div className="md:px-8 px-8">
-        <div className="text-3xl text-red-900 font-semibold ">Applications:</div>
-        <div>
-          <ul className="list-disc pl-10 pt-6 text-lg">
-            <li>200/400/800 GbE interconnects with FDR and EDR channels.</li>
-            <li>Data Aggregation, Proprietary Protocol and Density Applications.</li>
-            <li>High Performance and High Productivity computer interconnects.</li>
-            <li>Switch Fabric interconnects.</li>
-          </ul>
-        </div>
-      </div>
-      </div>
-
-      
     </div>
   );
 }

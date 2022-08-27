@@ -1,9 +1,17 @@
 import React from "react";
-
-import InvestorsInfo from "../Azure/InvestorInfo";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { InvestorsInfo } from "../Azure/cdn";
 
 function Investors() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
+    <>
+    <motion.div className="progress-bar" style={{ scaleX }} />
     <div className="md:px-80  px-2 pb-16 bg-gray-100">
       <h1 className="text-center py-20 text-5xl font-bold  uppercase">
         Our Investors
@@ -35,6 +43,7 @@ function Investors() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

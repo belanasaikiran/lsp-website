@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./logo.jpeg";
 import { MenuIcon, XIcon, ChevronDownIcon } from "@heroicons/react/outline";
 import "./NavBar.css";
 
 function NavBar() {
-  const [nav, setNav] = React.useState(false);
+  const [nav, setNav] = useState(false);
   // open navbar below
   const handleClick = () => {
     setNav(!nav);
@@ -19,11 +19,10 @@ function NavBar() {
     });
   };
 
-  const scrollToTop = () => {};
 
   return (
-    <div className="sticky top-0 z-[1] drop-shadow-md ">
-      <div className="w-full  text-gray-500 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div className="sticky top-0 z-[1] drop-shadow-md">
+      <div className="w-full  text-gray-500 bg-white backdrop-opacity-80 ">
         <div
           // onClick={scrollToTop}
           className="flex flex-col max-w-screen-xl  mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
@@ -164,32 +163,32 @@ function NavBar() {
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
               </button>
               <ul className=" hidden pt-1 text-gray-600 group-hover:block bg-gray-100 w-56 z-30 md:absolute">
-                <li className="">
-                  <a
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                <NavLink
                     onClick={handleClose}
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8 "
-                    href="#_"
+                    to="/Insights/Publications"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     Publications
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="">
-                  <a
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                <NavLink
                     onClick={handleClose}
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8 "
-                    href="#_"
+                    to="/Insights/Blog"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     Blog
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="">
-                  <a
+                <li className="py-2 px-4 whitespace-no-wrap block rounded-t   hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8">
+                <NavLink
                     onClick={handleClose}
-                    className="whitespace-no-wrap block rounded-t  py-2 px-4 hover:text-gray-900 hover:font-medium hover:underline decoration-red-900 decoration-4 hover:underline-offset-8  "
-                    href="#_"
+                    to="/Insights/News"
+                    className="  mt-2 text-base  text-gray-500    md:mt-0  duration-300 md:rounded hover:text-gray-900  focus:outline-none focus:shadow-outline hover:underline decoration-red-900 decoration-4 hover:underline-offset-8"
                   >
                     News
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>

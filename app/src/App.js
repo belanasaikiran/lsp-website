@@ -16,6 +16,7 @@ import LightSiP from "./components/Products/LightSiP";
 import Error from "./components/404/Error404";
 import Investors from "./components/Investors/Investors";
 import Gallery from "./components/Gallery/Gallery";
+import AzadiKaAmritMahotsav from "./components/Gallery/AzadiKaDigitalMahotsav"
 import ScrollToTop from "react-scroll-up";
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
             <Route path="/company/news" element={<News />} />
             <Route path="/company/investors" element={<Investors />} />
             <Route path="/company/gallery" element={<Gallery />} />
+
+            <Route path="/company/gallery/AzadiKaDigitalMahotsav" element={<AzadiKaAmritMahotsav />} />
             <Route path="/products/lightkonnect" element={<LightKonnect />} />
             <Route
               path="/products/lightkonnectFiber"
