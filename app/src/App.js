@@ -16,8 +16,10 @@ import LightSiP from "./components/Products/LightSiP";
 import Error from "./components/404/Error404";
 import Investors from "./components/Investors/Investors";
 import Gallery from "./components/Gallery/Gallery";
-import AzadiKaAmritMahotsav from "./components/Gallery/AzadiKaDigitalMahotsav"
+import Event from "./components/Gallery/Event"
 import ScrollToTop from "react-scroll-up";
+
+import Info from "./components/Gallery/Info"
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -28,6 +30,7 @@ function App() {
       setLoading(false);
     }, 2500);
   }, []);
+
 
   return (
     <div>
@@ -62,8 +65,8 @@ function App() {
             <Route path="/company/news" element={<News />} />
             <Route path="/company/investors" element={<Investors />} />
             <Route path="/company/gallery" element={<Gallery />} />
-
-            <Route path="/company/gallery/AzadiKaDigitalMahotsav" element={<AzadiKaAmritMahotsav />} />
+            {/* Dynamic Route */}
+            <Route path={Info[0].link} element={<Event />} />
             <Route path="/products/lightkonnect" element={<LightKonnect />} />
             <Route
               path="/products/lightkonnectFiber"
