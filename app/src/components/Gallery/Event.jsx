@@ -1,15 +1,17 @@
 import React, { useState, useCallback } from "react";
 import CDN from "../Azure/cdn";
-import {EventInfo} from "./Gallery"
-import {AzadikaAmritMahotsav2022} from "./Info"
+
+import { EventInfo, Photos } from "./Gallery";
 import ImageViewer from "react-simple-image-viewer";
+
+// dynamic import
+
 function Event() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
-
-console.log("EventInfo is " , EventInfo)
-  
+  // console.log("EventInfo is " , EventInfo)
+  // console.log("Photos: ", Photos)
 
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);
@@ -21,24 +23,29 @@ console.log("EventInfo is " , EventInfo)
     setIsViewerOpen(false);
   };
   return (
-    <div className="md:px-60 px-2 py-16 h-max ">
+    <div className="xl:px-60 px-2 py-16 h-max ">
       <h1 className="text-4xl font-bold uppercase text-red-900 text-center pb-16">
         {EventInfo.title}
       </h1>
       <p className="text-xl pb-8">{EventInfo.description}</p>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
-        {AzadikaAmritMahotsav2022.map((src, index) => (
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
+        {Photos.map((src, index) => (
           <img
             src={src}
             onClick={() => openImageViewer(index)}
             key={index}
             alt="CDN_IMAGE"
+            style={{
+              width: "500px",
+              height: "400px",
+              objectFit: "cover",
+            }}
           />
         ))}
       </div>
       {isViewerOpen && (
         <ImageViewer
-          src={AzadikaAmritMahotsav2022}
+          src={Photos}
           currentIndex={currentImage}
           onClose={closeImageViewer}
           disableScroll={false}
@@ -49,7 +56,6 @@ console.log("EventInfo is " , EventInfo)
           closeOnClickOutside={true}
         />
       )}
-
     </div>
   );
 }

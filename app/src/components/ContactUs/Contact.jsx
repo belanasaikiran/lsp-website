@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { AiTwotoneLike, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import MAP from "../../assets/images/map-image.png";
 
 function Contact() {
   const ContactInfo = [
@@ -68,7 +69,8 @@ function Contact() {
   ];
 
   return (
-    <div className="text-center pt-10 ">
+    <div
+      className="text-center pt-10  " >
       <div>
         <h1 className="text-4xl text-gray-700 font-bold pb-10 ">
           Co
