@@ -30,12 +30,12 @@ function LightKonnect() {
               LightKonnect&trade;
             </h1>
             <p className="md:text-2xl text-lg font-base text-gray-900">
-              LSAI-TX-1612-650400 & LSAI-RX-1612-650400
+              LSP-TX-1612-650400 & LSP-RX-1612-650400
             </p>
 
             <p className="text-lg py-8">
-              LSAI-TX-1612-650400 Twelve Channel, Pluggable, Parallel Optics
-              Transmitter and LSAI-RX-1612-650400 Twelve Channel, Pluggable,
+              LSP-TX-1612-650400 Twelve Channel, Pluggable, Parallel Optics
+              Transmitter and LSP-RX-1612-650400 Twelve Channel, Pluggable,
               Parallel Optics Receiver are high performance free-space optics
               modules for short-range parallel multi-lane data communication and
               interconnect applications in a small LGA Surface Mount Package.

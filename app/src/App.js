@@ -20,6 +20,8 @@ import Event from "./components/Gallery/Event";
 import ScrollToTop from "react-scroll-up-update";
 // import { EventInfo } from "./components/Gallery/Gallery";
 import Info from "./components/Gallery/Info";
+import Terms from "./components/Others/Terms";
+import Privacy from "./components/Others/Privacy"
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -78,6 +80,9 @@ function App() {
             <Route path="/products/lightsip" element={<LightSiP />} />
             <Route path="*" element={<Error />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/terms&conditions" element={<Terms />} />
+            <Route path="/privacypolicy" element={<Privacy />} />
+
           </Routes>
           <Footer />
         </Router>

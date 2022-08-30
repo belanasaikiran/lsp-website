@@ -23,7 +23,6 @@ const Info = [
 const AzadikaAmritMahotsav2022 = [
   `${CDN}/Gallery/AzadiKaAmritMahotsav/20211201_102052.jpg`,
   `${CDN}/Gallery/AzadiKaAmritMahotsav/20211201_102155.jpg`,
-  `${CDN}/Gallery/AzadiKaAmritMahotsav/20211201_143301.jpg`,
   `${CDN}/Gallery/AzadiKaAmritMahotsav/20211201_143303.jpg`,
   `${CDN}/Gallery/AzadiKaAmritMahotsav/20211201_151754.jpg`,
 ];

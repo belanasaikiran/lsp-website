@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaTwitter, FaLocationArrow } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -44,27 +45,44 @@ function Footer() {
                 </h6>
                 <div className="flex flex-row ">
                   <div className="basis-1/2">
-                    <a href="#_" className="text-gray-400 py-1 block  ">
-                      Products
-                    </a>
-                    <a href="#_" className="text-gray-400 py-1 block  ">
-                      Company
-                    </a>
-
-                    <a href="#_" className="text-gray-400 py-1 block  ">
+                    <NavLink
+                      to="/products/lightkonnect"
+                      className=" text-gray-400 py-1 block"
+                    >
+                      LightKonnect
+                    </NavLink>
+                    <NavLink
+                      to="/company/Investors"
+                      className=" text-gray-400 py-1 block"
+                    >
+                      Investors
+                    </NavLink>{" "}
+                    <NavLink
+                      to="/company/team"
+                      className=" text-gray-400 py-1 block"
+                    >
                       Team
-                    </a>
+                    </NavLink>
                   </div>
                   <div className="basis-1/2">
-                    <a href="#_" className="text-gray-400 py-1 block  ">
+                    <NavLink
+                      to="/company/team"
+                      className=" text-gray-400 py-1 block"
+                    >
                       News
-                    </a>
-                    <a href="#_" className="text-gray-400 py-1 block  ">
+                    </NavLink>
+                    <NavLink
+                      to="/careers"
+                      className=" text-gray-400 py-1 block"
+                    >
                       Careers
-                    </a>
-                    <a href="#_" className="text-gray-400 py-1 block ">
+                    </NavLink>
+                    <NavLink
+                      to="/contact"
+                      className=" text-gray-400 py-1 block"
+                    >
                       Contact Us
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -107,22 +125,20 @@ function Footer() {
               </p>
             </div>
             <div className="md:flex-1 md:px-4 text-center md:text-right">
-              <a
-                href="#_"
-                className="py-2 px-4 text-white inline-block  "
-                target="_blank"
-                rel="noreferrer"
-              >
-                Terms of Service
-              </a>
-              <a
-                href="#_"
-                className="py-2 px-4 text-white inline-block  "
-                rel="noreferrer"
-                target="_blank"
-              >
-                Privacy Policy
-              </a>
+       
+              <NavLink
+                      to="/terms&conditions"
+                      className="py-2 px-4 text-white inline-block  "
+                    >
+                      Terms of Service
+                    </NavLink>
+                    <NavLink
+                      to="/privacypolicy  "
+                      className="py-2 px-4 text-white inline-block  "
+                    >
+                      Privacy Policy
+                    </NavLink>
+            
             </div>
           </div>
         </div>
