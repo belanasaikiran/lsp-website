@@ -9,12 +9,12 @@ function test(index) {
 
 function Gallery() {
   return (
-    <div className="md:px-80 px-2 py-16 ">
+    <div className="xl:px-80 px-2 py-16 ">
       <h1 className="text-4xl font-bold uppercase text-red-900 text-center pb-16">
         Gallery
       </h1>
 
-      <div className="grid md:grid-cols-3 gap-2">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-2">
         {Info.map((gallery, index) => (
           <div className="hover:scale-105 duration-300 transition-all hover:bg-gray-100 hover:drop-shadow-lg border-2 p-3 rounded-sm">
             <img

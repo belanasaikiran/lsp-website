@@ -15,22 +15,22 @@ function Home() {
   return (
     <div>
       <div
-        className="grid md:grid-flow-col  md:gap-4 md:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164"
+        className="grid lg:grid-flow-col  lg:gap-4 md:gap-2 xl:px-60 px-2 md:py-28 py-12  bg-cover bg-gray-200 h-164"
       >
-        <div className="md:grid grid-col-1 text-black content-center pt-1 md:pt-8 md:col-span-1 col-span-2">
-          <h1 className="md:text-6xl text-4xl  text-semibold font-bold md:text-left text-center md:leading-[4rem] py-4 ">
+        <div className="lg:grid grid-col-1 text-black content-center pt-1 md:pt-8 lg:col-span-1">
+          <h1 className="lg:text-6xl md:text-5xl text-4xl  text-semibold font-bold lg:text-left text-center md:leading-[4rem] py-4 ">
             Bringing{" "}
             <span className="bg-gradient-to-r text-red-800   hover:scale-110   ">
               Light
             </span>{" "}
-            to the Computing World !
+            to the Computing World!
           </h1>
-          <p className="md:text-3xl pt-8 md:text-left text-center">
+          <p className="lg:text-3xl md:text-2xl text-xl pt-8 lg:text-left text-center">
             Building Lego-Like Optoelectronic Processors and Interconnects for
             DataCenters and near-Edge Compute
           </p>
         </div>
-        <div className="col-span-2 ">
+        <div className="xl:col-span-2 ">
           <motion.div
             className="box"
             whileHover={{ scale: 1.1 }}
@@ -39,11 +39,11 @@ function Home() {
             <img src={SIP} alt="laser" className="  hover:drop-shadow-2xl " />
           </motion.div>
         </div>
-      </div>
+      </div>  
 
       {/* Section -2 */}
       <div>
-        <div className="md:px-72 px-2 py-32  bg-red-900 ">
+        <div className="xl:px-72 px-2 py-32  bg-red-900 ">
           <div className=" text-gray-100  items-center text-center pt-1 md:pt-8 ">
             <h1 className="md:text-5xl text-white text-3xl  text-semibold font-bold text-center md:leading-[4rem] uppercase  ">
               At LightSpeed Photonics,
@@ -78,13 +78,13 @@ function Home() {
       </div>
 
       {/* Section-3 */}
-      <div className="md:px-60 px-2 py-12">
+      <div className="xl:px-60 px-2 py-12">
         <div className="pb-16">
           <h1 className="md:text-4xl text-3xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 ">
             WHO MAY BENEFIT FROM US
           </h1>
         </div>
-        <div className="grid md:grid-cols-3   gap-4 text-center">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2   gap-4 text-center">
           {/* Telecom */}
           <div className="flex flex-col items-center py-4 gap-4">
             <FaServer className="w-28 h-28 " />
@@ -124,13 +124,13 @@ function Home() {
       </div>
 
       {/* Section - 4 -> Investors */}
-      <div className="md:px-60 px-2 py-12 bg-gray-100">
+      <div className="xl:px-60 px-2 py-12 bg-gray-100">
         <div className="pb-16">
           <h1 className="md:text-4xl text-3xl  text-semibold font-bold text-center md:leading-[4rem] text-red-800 uppercase ">
             Our Investors
           </h1>
 
-          <div className="grid md:grid-cols-5 md:text-base text-2xl  gap-5 justify-items-center text-center pt-14">
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 md:text-base text-2xl  gap-5 justify-items-center text-center pt-14">
             {InvestorsInfo.map((investors) => (
               <div className="hover:scale-105 duration-300 transition-all hover:drop-shadow-xl text-center ">
                 <a

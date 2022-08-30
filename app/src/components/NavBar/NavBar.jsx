@@ -24,8 +24,7 @@ function NavBar() {
     <div className="sticky top-0 z-[1] drop-shadow-md">
       <div className="w-full  text-gray-500 bg-white backdrop-opacity-80 ">
         <div
-          // onClick={scrollToTop}
-          className="flex flex-col max-w-screen-xl  mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+          className="flex flex-col max-w-screen-xl  mx-auto lg:items-center lg:justify-between lg:flex-row md:px-6 lg:px-8"
         >
           {/* Nav Content */}
           <div className={"p-4 flex flex-row items-center justify-between"}>
@@ -41,7 +40,7 @@ function NavBar() {
               />
             </NavLink>
             <button
-              className="md:hidden rounded-lg focus:outline-none focus:shadow-outline transition-all duration-500 delay-300 ease-in-out"
+              className="lg:hidden rounded-lg focus:outline-none focus:shadow-outline transition-all duration-500 delay-300 ease-in-out"
               onClick={handleClick}
             >
               <svg
@@ -58,7 +57,7 @@ function NavBar() {
 
           <nav
             className={
-              "flex-col md:flex md:justify-end md:flex-row w-full lg:flex lg:items-center transition-all delay-500 duration-500 ease-in-out " +
+              "flex-col lg:flex lg:justify-end lg:flex-row w-full xl:flex xl:items-center transition-all delay-500 duration-500 ease-in-out " +
               (nav ? "flex h-full  " : "hidden  ")
             }
           >
