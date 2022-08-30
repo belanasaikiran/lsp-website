@@ -16,10 +16,7 @@ import LightSiP from "./components/Products/LightSiP";
 import Error from "./components/404/Error404";
 import Investors from "./components/Investors/Investors";
 import Gallery from "./components/Gallery/Gallery";
-import Event from "./components/Gallery/Event";
 import ScrollToTop from "react-scroll-up-update";
-// import { EventInfo } from "./components/Gallery/Gallery";
-import Info from "./components/Gallery/Info";
 import Terms from "./components/Others/Terms";
 import Privacy from "./components/Others/Privacy"
 
@@ -66,11 +63,7 @@ function App() {
             <Route path="/company/news" element={<News />} />
             <Route path="/company/investors" element={<Investors />} />
             <Route path="/company/gallery" element={<Gallery />} />
-            {/* Dynamic Route */}
-            {/* <Route path={EventInfo.link} element={<Event />} /> */}
-            {Info.map((Links) => (
-              <Route path={Links.link} element={<Event />} />
-            ))}
+   
 
             <Route path="/products/lightkonnect" element={<LightKonnect />} />
             <Route
