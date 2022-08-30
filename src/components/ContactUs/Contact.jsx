@@ -5,7 +5,6 @@ import { MdEmail } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { AiTwotoneLike, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import MAP from "../../assets/images/map-image.png";
 
 function Contact() {
   const ContactInfo = [
